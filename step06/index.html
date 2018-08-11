@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8" />
+    <title>스탠포드호텔 서울</title>
+    <link rel="icon" href="img/faviconE58F3A.ico" type="image/x-icon" />
+    <link href="css/import.css" rel="stylesheet" />
+    <!--font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script>
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="#">LOGO</a></h1>
+
+        <input type="checkbox" id="menu" />
+
+        <nav class="menuMain">
+            <label for="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div>
+                <ul>
+                    <li><a href="#">호텔소개</a></li>
+                    <li><a href="#">객실</a></li>
+                    <li><a href="#">다이닝</a></li>
+                    <li><h2><a href="#">logo</a></h2></li>
+                    <li><a href="#">웨딩&연회</a></li>
+                    <li><a href="#">피트니스</a></li>
+                    <li><a href="#">특별한혜택</a></li>
+                </ul>
+            </div>
+            <span>
+                <a href="#">예약</a>
+            </span>
+        </nav>
+
+        <nav class="menuArea">
+            <ul>
+                <li>
+                    <h2>호텔소개</h2>
+                    <ol>
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">층별안내</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">주변환경</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>객실</h2>
+                    <ol>
+                        <li><a href="#">All Rooms</a></li>
+                        <li><a href="#">Double</a></li>
+                        <li><a href="#">Twin</a></li>
+                        <li><a href="#">Superior</a></li>
+                        <li><a href="#">Deluxe</a></li>
+                        <li><a href="#">Junior Suite</a></li>
+                        <li><a href="#">Parlor Suite</a></li>
+                        <li><a href="#">Executive Suite</a></li>
+                        <li><a href="#">Stanford Suite</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>다이닝</h2>
+                    <ol>
+                        <li><a href="#">카페 스탠포드</a></li>
+                        <li><a href="#">맨하탄 그릴&바</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>웨딩&연회</h2>
+                    <ol>
+                        <li><a href="#">웨딩</a></li>
+                        <li><a href="#">가족연</a></li>
+                        <li><a href="#">기업연회</a></li>
+                        <li><a href="#">연회장</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>피트니스</h2>
+                    <ol>
+                        <li><a href="#">피트니스 소개</a></li>
+                        <li><a href="#">실내수영장</a></li>
+                        <li><a href="#">체련장</a></li>
+                        <li><a href="#">피트니스 멤버쉽</a></li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h2>특별한혜택</h2>
+                    <ol>
+                        <li><a href="#">프로모션</a></li>
+                        <li><a href="#">패키지</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkArea">
+        <h2>체크인&체크아웃</h2>
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <figure>
+                    <img src="img/Transparency.png" alt="mainSlider01" />
+                    <figcaption>
+                        <dl>
+                            <dt>지친 일상의 쉼표, 하나</dt>
+                            <dd>바쁜 도시의 삶 속에 하나의 쉼표,<br />스탠포드호텔 서울이 행복한 여유를 선물합니다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="swiper-slide">
+                <figure>
+                    <img src="img/Transparency.png" alt="mainSlider02" />
+                    <figcaption>
+                        <dl>
+                            <dt>도심 속,또 하나의 이야기</dt>
+                            <dd>상암동 디지털 미디어시티에 위치한 스탠포드호텔 서울에서 나만의 추억을 만들어보세요.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+
+        <!--swiper controller-->
+        <div class="checkAreaPagination"></div>
+
+        <div class="checkReservation">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>체크인</dt>
+                        <dd> </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>체크아웃</dt>
+                        <dd> </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>성인</dt>
+                        <dd>1</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>아이</dt>
+                        <dd>0</dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="#">예약하기</a>
+                </li>
+            </ul>
+
+            <div>
+                <ul>
+                    <li>
+                        <table class="reservationCalendar">
+                            <caption>현재 달력</caption>
+                            <thead>
+                                <tr>
+                                    <th id="calendarYM" colspan="7"> </th>
+                                </tr>
+                                <tr>
+                                    <th>일</th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table class="reservationCalendar">
+                            <caption>다음달 달력</caption>
+                            <thead>
+                                <tr>
+                                    <th colspan="7"> </th>
+                                </tr>
+                                <tr>
+                                    <th>일</th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <button>선택완료</button>
+                        <div>
+                            <button><</button>
+                            <button>></button>
+                        </div>
+                      </li>
+                    <li>
+                        <dl>
+                            <dt>성인
+                                <span>만 12세 이상</span>
+                            </dt>
+                            <dd>0명</dd>
+                            <dd class="NumberOfPeopleClick">1명</dd>
+                            <dd>2명</dd>
+                            <dd>3명</dd>
+                            <dd>4명</dd>
+                        </dl>
+                        <dl>
+                            <dt>아이
+                                <span>만 11세 이하</span>
+                            </dt>
+                            <dd class="NumberOfPeopleClick">0명</dd>
+                            <dd>1명</dd>
+                            <dd>2명</dd>
+                        </dl>
+                        <button>선택완료</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="serviceArea">
+        <h2>특별한 스탠포드서울</h2>
+        <p>당신만을 위한 품격 높은 최고의 서비스가 기다리고 있습니다.</p>
+        <aside>
+            <ul>
+                <li class="active">
+                    <i class="fas fa-bed"></i> 객실
+                </li>
+                <li>
+                    <i class="fas fa-utensils"></i> 다이닝
+                </li>
+                <li>
+                    <i class="fas fa-cocktail"></i> 연회&웨딩
+                </li>
+                <li>
+                    <i class="fas fa-dumbbell"></i> 피트니스
+                </li>
+            </ul>
+        </aside>
+        <ul>
+            <li class="tabContentDisplay">
+                <figure>
+                    <div>
+                        <img src="img/Transparency.png" alt="teb_img01" />
+                        <span>ROOMS</span>
+                    </div>
+                    <figcaption>
+                        <dl>
+                            <dt>객실</dt>
+                            <dd>스탠포드에서의 편안하고 여유로운 휴식은 <br />그 무엇과도 비교할 수 없는 행복이 될 것입니다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <div>
+                        <img src="img/Transparency.png" alt="teb_img02" />
+                        <span>DINNING</span>
+                    </div>
+                    <figcaption>
+                        <dl>
+                            <dt>다이닝</dt>
+                            <dd>도심에서 즐기는 미식의 향연, <br />카페스탠포드에서 최고의 요리를 선사합니다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <div>
+                        <img src="img/Transparency.png" alt="teb_img03" />
+                        <span>BANOUET</span>
+                    </div>
+                    <figcaption>
+                        <dl>
+                            <dt>연회</dt>
+                            <dd>사랑하는 사람과 함께 하는 특별한 행사에는 <br />언제나 스탠포드에서만의 정성스런 마음이 있습니다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <div>
+                        <img src="img/Transparency.png" alt="teb_img04" />
+                        <span>FITNESS</span>
+                    </div>
+                    <figcaption>
+                        <dl>
+                            <dt>이트니스</dt>
+                            <dd>최고 수준의 피트니스 센터와 실내 수영장은 <br />스탠포드서울 호텔만의 자랑입니다.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="eventArea">
+        <h2>즐겁고 행복한 스탠포드</h2>
+        <p>스탠포드호텔의 다양한 혜택과 이벤트를 만나보세요.</p>
+        <div class="eventAreaSwiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <figure>
+                        <img src="img/event01.jpg" alt="event01" />
+                        <figcaption>
+                            <dl>
+                                <dt>스탠포드호텔의 틀별한 작은 결혼식</dt>
+                                <dd><p>개성있는 나만의 컨셉웨딩을 전문 웨딩디렉터와 함께 스탠포드호텔에서 기획해 보시기 바랍니다.</p></dd>
+                            </dl>
+                            <span>2017-03-31~</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <img src="img/event02.jpg" alt="event01" />
+                        <figcaption>
+                            <dl>
+                                <dt>Sunday To monday PKG</dt>
+                                <dd><p>행복한 일요일과 월요일을 보내는 방법! 스탠포드호텔 선데이 투 먼데이 패키지로 여유로운 주말을 맞이해보세요.</p></dd>
+                            </dl>
+                            <span>2017-11-05~</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <img src="img/event03.jpg" alt="event01" />
+                        <figcaption>
+                            <dl>
+                                <dt>[당첨자 발표] 스탠포드호텔 그룹 홈페이지 리뉴얼 오픈 이벤트 당첨자 발표</dt>
+                                <dd><p>홈페이지 리뉴얼 오픈 이벤트(홈페이지 예약자) 당첨자를 발표합니다.</p></dd>
+                            </dl>
+                            <span>2018-06-12~</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <img src="img/event04.jpg" alt="event01" />
+                        <figcaption>
+                            <dl>
+                                <dt>Special Whisky Package</dt>
+                                <dd><p>Wow~Great! Special Whisky Package</p></dd>
+                            </dl>
+                            <span>2018-01-25~</span>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#">더보기 +</a>
+
+        <div class="eventAreaController">
+            <div class="swiper-button-next"><i class="fas fa-angle-right"></i></div>
+            <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">자주묻는질문</a></li>
+            <li><a href="#">온라인문의</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <address>
+            <ul>
+                <li>㈜스탠포드호텔코리아</li>
+                <li>대표자 : 권중갑</li>
+                <li>주소 : 서울시 마포구 월드컵북로 58길 15(상암동)</li>
+                <li>TEL : 02-6016-0001</li>
+                <li>FAX : 02-6016-0002</li>
+            </ul>
+            <p></p>
+        </address>
+
+        <ul>
+            <li><p>사업자등록번호 : 220-87-18352</p></li>
+            <li><p>통신판매업신고 : 2011-서울마포-1318</p></li>
+        </ul>
+
+        <p>
+            COPYRIGHT © StanfordHotel Co. Ltd. All rights reserved.
+        </p>
+
+        <select onchange="if(this.value) window.open(this.value);">
+            <option>스탠포드호텔사이트</option>
+            <option value="">스탠포드호텔그룹</option>
+            <option value="">스탠포드호텔&리조트 통영</option>
+            <option value="">스탠포드인 부산</option>
+        </select>
+    </footer>
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var el = document.querySelector('header');
+            if (window.pageYOffset >= 120) {
+                el.setAttribute('class', 'menuFixed');
+            } else {
+                el.removeAttribute('class', 'menuFixed');
+            }
+        });
+
+        // checkArea slider
+        var swiper = new Swiper('.checkArea', {
+            loop: true,
+            pagination: {
+                el: '.checkAreaPagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            simulateTouch: false,
+        });
+
+
+        // 달력
+        var today = new Date();
+        var nextMonth = new Date();
+        var DateCheck = new Date();
+
+        var reservationFirestConfirmation = document.querySelector('.checkArea .checkReservation > ul li:first-of-type > dl dd').firstChild;
+        var reservationSecondConfirmation = document.querySelector('.checkArea .checkReservation > ul li:nth-of-type(2) > dl dd').firstChild;
+
+        var reservationMonthCheck = document.querySelectorAll('.checkArea .checkReservation div ul li:first-of-type table tr:first-of-type th');
+
+        var prevNextCalenter = document.querySelectorAll('.checkArea .checkReservation > div ul li:first-of-type div button');
+
+        prevNextCalenter[0].addEventListener('click', function () {
+            if (today.getMonth() != DateCheck.getMonth()) {
+            today = new Date(today.getFullYear(), today.getMonth() - 1, today.getDate());
+            nextMonth = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+            calender();
+                if (DateCheck.getMonth() + 1 == reservationMonthCheck[0].firstChild.substringData(5, 1)) {
+                    reservationFirestConfirmation.replaceData(0, 20, '');
+                    reservationSecondConfirmation.replaceData(0, 20, '');
+                    calender();
+                } else {
+                    reservationFirestConfirmation.replaceData(0, 20, '. .');
+                    reservationSecondConfirmation.replaceData(0, 20, '. .');
+                }
+            }
+        });
+        //다음 달력을 오늘을 저장하고 달력에 뿌려줌
+        prevNextCalenter[1].addEventListener('click', function () {
+            today = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
+            nextMonth = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+            calender();
+            reservationFirestConfirmation.replaceData(0, 20, '. .');
+            reservationSecondConfirmation.replaceData(0, 20, '. .');
+        });
+
+
+        function calender() {
+            var todyFirstDay = new Date(today.getFullYear(), today.getMonth(), 1);
+            var todayLastDate = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+
+            var nextMonthFirstDay = new Date(nextMonth.getFullYear(), nextMonth.getMonth() + 1, 1);
+            var nextMonthLastDate = new Date(nextMonth.getFullYear(), nextMonth.getMonth() + 2, 0);
+            var reservationCalendar = document.getElementsByClassName('reservationCalendar');
+
+            var yearMonth = document.querySelectorAll('.checkArea .checkReservation div ul li:first-of-type table tr:first-of-type th');
+            yearMonth[0].innerHTML = today.getFullYear() + '.' + (today.getMonth() + 1);
+            var nextYear13 = nextMonth.getFullYear();
+            var nextMonth13 = (nextMonth.getMonth() + 2);
+            if ((nextMonth.getMonth() + 2) == 13) {
+                nextYear13 = (nextMonth.getFullYear() + 1);
+                nextMonth13 = (nextMonth.getMonth() - 10);
+            }
+            yearMonth[1].innerHTML = nextYear13 + '.' + nextMonth13;
+           
+            // 기존에 테이블에 잇던 달력 내용 삭제
+            while (reservationCalendar[0].rows.length > 2) {
+                reservationCalendar[0].deleteRow(reservationCalendar[0].rows.length - 1);
+            }
+            while (reservationCalendar[1].rows.length > 2) {
+                reservationCalendar[1].deleteRow(reservationCalendar[1].rows.length - 1);
+            }
+
+            var row = null;
+            row = reservationCalendar[0].insertRow();
+            var cnt = 0;
+            var cell;
+
+            for (var i = 0; i < todyFirstDay.getDay(); i++) {
+                cell = row.insertCell();
+                cnt = cnt + 1;
+            }
+
+            for (var i = 1; i <= todayLastDate.getDate(); i++) {
+                cell = row.insertCell();
+                cell.innerHTML = i;
+                cnt = cnt + 1;
+                if (cnt % 7 == 0) {
+                    row = reservationCalendar[0].insertRow();
+                }
+            }
+
+
+            var nextRow = null;
+            var nextCnt = 0;
+            var nextCell;
+            nextRow = reservationCalendar[1].insertRow();
+
+            for (var i = 0; i < nextMonthFirstDay.getDay(); i++) {
+                nextCell = nextRow.insertCell();
+                nextCnt = nextCnt + 1;
+            }
+
+            for (var i = 1; i <= nextMonthLastDate.getDate(); i++) {
+                nextCell = nextRow.insertCell();
+                nextCell.innerHTML = i;
+                nextCnt = nextCnt + 1;
+                if (nextCnt % 7 == 0) {
+                    nextRow = reservationCalendar[1].insertRow();
+                }
+            }
+
+            // 달력 클릭
+            var calendarDate = document.querySelectorAll('.checkArea .checkReservation div ul li:first-of-type table tr td');
+            var firstCalendarDate = document.querySelectorAll('.checkArea .checkReservation div ul li:first-of-type table:first-of-type thead tr td');
+
+
+            // 지난 날짜 클릭 막기?
+            if (DateCheck.getMonth() + 1 == reservationMonthCheck[0].firstChild.substringData(5, 1)) {
+                for (var i = 0; i < firstCalendarDate.length; i++) {
+                    console.log('calendarDate[i].innerHTM = ' + calendarDate[0].innerHTML);
+                    if (firstCalendarDate[i].innerHTML == '') {
+                        firstCalendarDate[i].classList.add('lastDay');
+                    } else if (firstCalendarDate[i].innerHTML < today.getDate()) {
+                        firstCalendarDate[i].classList.add('lastDay');
+                    }
+
+                }
+            };
+
+            var secondDateCheck = 0;
+            var firstSecndReservation = 0;
+            var reservationFirst;
+            var reservationSecond;
+
+            // 예약 날짜 기본설정
+            reservationFirestConfirmation.appendData(today.getFullYear() + '.' + (today.getMonth() + 1) + '.' + today.getDate());
+            reservationSecondConfirmation.appendData(today.getFullYear() + '.' + (today.getMonth() + 1) + '.' + (today.getDate() + 1));
+
+            for (var i = 0; i < calendarDate.length / 2; i++) {
+                if ((today.getDate()) == calendarDate[i].innerHTML) {
+                    calendarDate[i].classList.add('reservationDateCheck');
+                    calendarDate[i+1].classList.add('reservationDateCheck');
+                }
+            }
+
+            // 날짜 선택
+            var firstDay;
+            for (var i = 0; i < firstCalendarDate.length; i++) {
+                if (firstCalendarDate[i].innerHTML == today.getDate()) {
+                    firstDay = i;
+                }
+            }
+            if (DateCheck.getMonth() + 1 == reservationMonthCheck[0].firstChild.substringData(5, 1)) {
+                for (var i = firstDay; i < calendarDate.length; i++) {
+                    if (calendarDate[i].innerHTML != '') {
+                        calendarDate[i].addEventListener('click', reservationDate.bind(null, i));
+                    } else {
+                        calendarDate[i].classList.add('lastDay');
+                    }
+                }
+            } else {
+                for (var i = 0; i < calendarDate.length; i++) {
+                    if (calendarDate[i].innerHTML != '') {
+                        calendarDate[i].addEventListener('click', reservationDate.bind(null, i));
+                    } else {
+                        calendarDate[i].classList.add('lastDay');
+                    }
+                }
+            }
+
+            // 날짜 선택 클릭 이벤트
+            function reservationDate(index) {
+                // secondDateCheck 마지막날짜가 시작날짜보다 앞서는지 체크 
+                if (secondDateCheck < index) {
+                    // firstSecndReservation 첫번째 클릭시 시작날짜 reservationFirst 넣고 두번째 클릭시 마지막날짜 reservationSecond 넣기
+                    if (firstSecndReservation == 0) {
+                        if (index < calendarDate.length / 2) {
+                            if (calendarDate[index].innerHTML != '') {
+                                reservationFirst = reservationMonthCheck[0].innerHTML + '.' + calendarDate[index].innerHTML;
+                                reservationFirestConfirmation.replaceData(0, 10, reservationFirst);
+                                reservationSecondConfirmation.replaceData(0, 10, '. .');
+                                secondDateCheck = index;
+                                firstSecndReservation = 1;
+                                for (var i = 0; i < calendarDate.length; i++) {
+                                    calendarDate[i].classList.remove('reservationDateCheck');
+                                    calendarDate[i].classList.remove('reservationDateCheckPeriod');
+                                }
+                                calendarDate[index].classList.add('reservationDateCheck');
+                            }
+                        } else {
+                            if (calendarDate[index].innerHTML != '') {
+                                reservationFirst = reservationMonthCheck[1].innerHTML + '.' + calendarDate[index].innerHTML;
+                                reservationFirestConfirmation.replaceData(0, 10, reservationFirst);
+                                reservationSecondConfirmation.replaceData(0, 10, '. .');
+                                secondDateCheck = index;
+                                firstSecndReservation = 1;
+                                for (var i = 0; i < calendarDate.length; i++) {
+                                    // 클래스 같이 쓰면 IE에서 안됨
+                                    //calendarDate[i].classList.remove('reservationDateCheck', 'reservationDateCheckPeriod');
+                                    calendarDate[i].classList.remove('reservationDateCheck');
+                                    calendarDate[i].classList.remove('reservationDateCheckPeriod');
+                                }
+                                calendarDate[index].classList.add('reservationDateCheck');
+                            }
+                        }
+                    } else {
+                        if (index < calendarDate.length / 2) {
+                            reservationSecond = reservationMonthCheck[0].innerHTML + '.' + calendarDate[index].innerHTML;
+                            reservationSecondConfirmation.replaceData(0, 10, reservationSecond);
+                            calendarDate[index].classList.add('reservationDateCheck');
+                            for (var i = secondDateCheck + 1; i < index; i++) {
+                                if (calendarDate[i].innerHTML != '') {
+                                    calendarDate[i].classList.add('reservationDateCheckPeriod');
+                                }
+                            }
+                            secondDateCheck = 0;
+                            firstSecndReservation = 0;
+                        } else {
+                            reservationSecond = reservationMonthCheck[1].innerHTML + '.' + calendarDate[index].innerHTML;
+                            console.log(reservationMonthCheck[1].innerHTML);
+                            reservationSecondConfirmation.replaceData(0, 10, reservationSecond);
+                            calendarDate[index].classList.add('reservationDateCheck');
+                            for (var i = secondDateCheck + 1; i < index; i++) {
+                                if (calendarDate[i].innerHTML != '') {
+                                    calendarDate[i].classList.add('reservationDateCheckPeriod');
+                                }
+                            }
+                            secondDateCheck = 0;
+                            firstSecndReservation = 0;
+                        }
+                    }
+                } else {
+                    if (index < calendarDate.length / 2) {
+                        if (calendarDate[index].innerHTML != '') {
+                            reservationFirst = reservationMonthCheck[0].innerHTML + '.' + calendarDate[index].innerHTML;
+                            reservationFirestConfirmation.replaceData(0, 10, reservationFirst);
+                            secondDateCheck = index;
+                            firstSecndReservation = 1;
+                            for (var i = 0; i < calendarDate.length; i++) {
+                                calendarDate[i].classList.remove('reservationDateCheck', 'reservationDateCheckPeriod');
+                            }
+                            calendarDate[index].classList.add('reservationDateCheck');
+                        }
+                    } else {
+                        if (calendarDate[index].innerHTML != '') {
+                            reservationFirst = reservationMonthCheck[1].innerHTML + '.' + calendarDate[index].innerHTML;
+                            reservationFirestConfirmation.replaceData(0, 10, reservationFirst);
+                            secondDateCheck = index;
+                            firstSecndReservation = 1;
+                            for (var i = 0; i < calendarDate.length; i++) {
+                                calendarDate[i].classList.remove('reservationDateCheck', 'reservationDateCheckPeriod');
+                            }
+                            calendarDate[index].classList.add('reservationDateCheck');
+                        }
+                    }
+
+                }
+            }
+        }
+
+        // 달력 내용 뿌려주기
+        calender();
+
+        // 달력 닫기
+        document.querySelector('.checkArea .checkReservation div ul li:first-of-type button').addEventListener('click', function () {
+            adultChilderen.classList.remove('calenderDisplayBlock');
+            reservationClick[1].classList.remove('test');
+        });
+
+
+
+        // 달력 / 예약(성인/아이) 열기
+        var adultChilderen = document.querySelector('.checkArea .checkReservation div');
+        var reservationClick = document.querySelectorAll(".checkArea .checkReservation > ul li:not(:last-of-type)");
+
+        for (var i = 0; i < reservationClick.length; i++) {
+            if (i == 2 || i == 3) {
+                reservationClick[i].addEventListener('click', function () {
+                    adultChilderen.classList.add('adultChilderenDisplayBlock');
+                    adultChilderen.classList.remove('calenderDisplayBlock');
+                });
+            } else {
+                reservationClick[i].addEventListener('click', function () {
+                    adultChilderen.classList.add('calenderDisplayBlock');
+                    adultChilderen.classList.remove('adultChilderenDisplayBlock');
+                    // 화살표
+                    //reservationClick[1].classList.add('test');
+                });
+            }
+        };
+
+        for (var i = 0; i < 2; i++) {
+            reservationClick[i].addEventListener('mouseover', function () {
+                reservationClick[0].classList.add('textColor');
+                reservationClick[1].classList.add('textColor');
+            });
+            reservationClick[i].addEventListener('mouseout', function () {
+                reservationClick[0].classList.remove('textColor');
+                reservationClick[1].classList.remove('textColor');
+            });
+        }
+        for (var i = 2; i < 4; i++) {
+            reservationClick[i].addEventListener('mouseover', function () {
+                reservationClick[2].classList.add('textColor');
+                reservationClick[3].classList.add('textColor');
+            });
+            reservationClick[i].addEventListener('mouseout', function () {
+                reservationClick[2].classList.remove('textColor');
+                reservationClick[3].classList.remove('textColor');
+            });
+        }
+
+
+        // 예약(성인) 클릭
+        var adultNumber = 1;
+        var adultNumberOfPeople = document.querySelector('.checkArea .checkReservation > ul li:nth-of-type(3) > dl dd');
+        var adultNumberOfPeopleClick = document.querySelectorAll('.checkArea .checkReservation div ul li:last-of-type dl:first-of-type dd');
+
+        for (var i = 0; i < adultNumberOfPeopleClick.length; i++) {
+            adultNumberOfPeopleClick[i].addEventListener('click', function () {
+                adultClass();
+                this.classList.add('NumberOfPeopleClick');
+                adultNumber = this.firstChild.substringData(0, 1);
+                adultNumberOfPeople.firstChild.replaceData(0, 1, '' + adultNumber + '');
+            });
+        };
+
+        function adultClass() {
+            for (var i = 0; i < adultNumberOfPeopleClick.length; i++) {
+                adultNumberOfPeopleClick[i].classList.remove('NumberOfPeopleClick');
+            };
+        };
+
+        // 예약(아이) 클릭
+        var ChilderenNumber = 0;
+        var ChilderenNumberOfPeople = document.querySelector('.checkArea .checkReservation > ul li:nth-of-type(4) > dl dd');
+        var ChilderenNumberOfPeopleClick = document.querySelectorAll('.checkArea .checkReservation div ul li:last-of-type dl:last-of-type dd');
+
+        for (var i = 0; i < ChilderenNumberOfPeopleClick.length; i++) {
+            ChilderenNumberOfPeopleClick[i].addEventListener('click', function () {
+                Childeren();
+                this.classList.add('NumberOfPeopleClick');
+                ChilderenNumber = this.firstChild.substringData(0, 1);
+                ChilderenNumberOfPeople.firstChild.replaceData(0, 1, '' + ChilderenNumber + '');
+            });
+        };
+
+        function Childeren() {
+            for (var i = 0; i < ChilderenNumberOfPeopleClick.length; i++) {
+                ChilderenNumberOfPeopleClick[i].classList.remove('NumberOfPeopleClick');
+            };
+        };
+
+        // 예약(성인/아이) 닫기
+        document.querySelector('.checkArea .checkReservation div ul li:last-of-type button').addEventListener('click', function () {
+            adultChilderen.classList.remove('adultChilderenDisplayBlock');
+        });
+
+        // 예약버튼
+        var reservationData = document.querySelectorAll('.checkArea .checkReservation > ul li > dl dd');
+        document.querySelector('.checkArea .checkReservation > ul li:last-of-type a').addEventListener('click', function () {
+            if (reservationData[1].innerHTML.length >= 8) {
+                alert('입실 날짜 : ' + reservationData[0].innerHTML + '\n퇴실 날짜 : ' + reservationData[1].innerHTML + '\n성인 : ' + reservationData[2].innerHTML + '\n아이 : ' + reservationData[3].innerHTML);
+                window.open('reservation/reservation.html?' + reservationData[0].innerHTML + '.' + reservationData[1].innerHTML + '.' + reservationData[2].innerHTML + '.' + reservationData[3].innerHTML);
+            } else {
+                alert('입실 또는 퇴실 날짜를 확인해주세요');
+            }
+        });
+
+
+        // evetAreaSwiper 반응형
+        var enventAreaSliderWidth = 0;
+        if (window.outerWidth >= 1200) {
+            enventAreaSliderWidth = 3;
+        } else {
+            enventAreaSliderWidth = 2;
+        }
+
+        var evetSwiper = new Swiper('.eventAreaSwiper', {
+            slidesPerView: enventAreaSliderWidth,
+            spaceBetween: 30,
+            freeMode: true,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        function fixSwiper() {
+            if (window.outerWidth >= 1200) {
+                evetSwiper.params.slidesPerView = 3;
+            }
+            if (window.outerWidth < 1200) {
+                evetSwiper.params.slidesPerView = 2;
+            }
+        }
+        fixSwiper();
+        window.addEventListener('resize', function () {
+            fixSwiper();
+        })
+
+        // serviceArea tab
+        var classTab = document.querySelectorAll('.serviceArea aside ul li');
+        var tabContent = document.querySelectorAll('.serviceArea > ul li');
+
+        function classTab_click(idx) {
+            classTab[idx].onclick = function () {
+                for (var i = 0; i < classTab.length; i++) {
+                    classTab[i].classList.remove('active');
+                    tabContent[i].classList.remove('tabContentDisplay');
+                }
+                classTab[idx].classList.add('active');
+                tabContent[idx].classList.add('tabContentDisplay');
+            }
+        };
+        for (var i = 0; i < classTab.length; i++) {
+            classTab_click(i);
+        }
+
+    </script>
+</body>
+</html>

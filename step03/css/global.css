@@ -1,0 +1,77 @@
+﻿a{text-decoration:none;}
+
+/*영어 font*/
+*{font-family:Baloo;}
+/*한글 font*/
+.chaArea ul.chaAreaBxslider li figure figcaption p,.skiArea ul.skiAreaBxslider li figure figcaption p,.epiArea ul li figure figcaption{font-family:'Nanum Pen Script';}
+
+/*bxslider 기본설정*/
+.bx-wrapper{box-shadow:none; border:none; margin-bottom:0;}
+
+.warp{width:85%; margin:50px auto; box-shadow:0px 0px 30px 0px black; background-color:white;}
+
+body{background:url(../images/bodyBg_1.png),url(../images/bodyBg_2.png); background-repeat:no-repeat; background-position-y:1800px,3800px; background-size:contain;}
+
+header h1 { font-size: 240px; color: #e1266b; text-align:center; padding:180px 0 100px 0; position:relative;}
+header span{background:url(../images/logo.png) no-repeat center center; display:block; width:100%; height:100%; position:absolute; top:0; background-size:30%;}
+header input[type=checkbox]{display:none;}
+header input[type=checkbox]:checked ~ nav ul{height:0; overflow:hidden; transition-duration:1s;}
+header label{font-size:40px; color:#ffb5d0; -webkit-text-stroke-width:1px; -webkit-text-stroke-color:black; cursor:pointer; position:fixed; top:10px; right:2%; z-index:1; color:#ffb5d0; display:none;}
+header label:hover{color:#e1266b;}
+/*menu label*/
+header nav{}
+header nav ul{width:100%; text-align:center; margin-bottom:115px; height:50px; overflow:hidden;}
+header nav ul li{display:inline-block; margin-left:5%;}
+header nav ul li:first-of-type{margin-left:0;}
+header nav ul li a{font-size:40px; color:#ffb5d0; -webkit-text-stroke-width:1px; -webkit-text-stroke-color:black;}
+header nav ul li a:hover{color:#e1266b;}
+.navmenu{position:fixed; top:10px; left:0; z-index:10; display:block; width:100%; }
+.navmenu ul{margin-bottom:0;}
+/*.menu{position:fixed; top:10px; right:2%; z-index:1; color:#ffb5d0; display:block;}*/
+.menuLabel{display:block; position:fixed; top:10px; right:2%; z-index:1;}
+
+.colArea footer{text-align:center; font-size:20px; padding:10px 0;}
+
+@media all and (max-width:1350px) {
+.warp{width:100%; box-shadow:none; margin:0;}
+header h1 {font-size:200px; padding-top:50px;}
+header nav ul{height:25px;}
+header nav ul li a{font-size:30px;}
+}
+
+
+@media all and (max-width:940px) {
+header h1{font-size:150px;}
+header nav ul{margin-bottom:50px;}
+header nav ul li a{font-size:25px;}
+
+}
+
+@media all and (max-width:767px) {
+header label{display:block;}
+header nav ul{position:fixed; top:50px; right:2%; z-index:1; width:150px; height:0; margin-bottom:0;transition-duration:1s; }
+header input[type=checkbox]:checked ~ nav ul{height:200PX; overflow:hidden; transition-duration:1s;}
+header nav ul li{margin-bottom:10px;}
+header nav ul li:last-of-type{display:none;}
+}
+
+@media all and (max-width:710px) {
+header h1{font-size:100px;}
+}
+
+@media all and (max-width:500px) {
+header h1{font-size:90px; padding-bottom:50px;}
+}
+
+@media all and (max-width:450px) {
+header h1{font-size:80px;}
+}
+@media all and (max-width:450px) {
+header h1{font-size:70px;}
+}
+@media all and (max-width:350px) {
+header h1{font-size:60px;}
+}
+
+
+

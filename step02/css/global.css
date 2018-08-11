@@ -1,0 +1,40 @@
+﻿a{text-decoration:none;}
+
+/*Mitr 폰트*/
+div header h1,.abouArea h2,.abouArea > dl dd,.abouArea ul li ol li figure figcaption dl dd,.skillArea h2,.portArea h2,.portArea ul li figure figcaption a,.submArea h2{font-family:Mitr;}
+/*Hanna 폰트*/
+div header nav,.abouArea > dl dt,.abouArea ul li ol li figure figcaption dl dt,.abouArea div p,.skillArea ul li,.portArea ul li figure figcaption dl,.submArea ul li,.abouArea ul li:last-of-type ol li figure figcaption dl dd,.portArea ul li figure figcaption ul li{font-family:Hanna;}
+
+body > div{background-color:white;}
+
+div header{background:url(../images/header.png) no-repeat left top; background-size:contain; background-size:100%; margin-bottom:95px; background-attachment:fixed;}
+div header h1{font-size:60px; text-align:center; min-width:530px; width:45%; padding:25% 0 130px 0; margin-left:60px;}
+div header h1 span .word1{width:55%; text-align:right;}
+div header h1 span .word2{width:40%; text-align:left;}
+/*메뉴*/
+div header input[type='checkbox']{display:none;}
+div header input[type='checkbox']:checked ~ nav{width:0; overflow:hidden; transition:1s;}
+div header label{position:fixed; right:30px; top:30px; width:50px; display:block; cursor:pointer; z-index:10;}
+div header label span{ width:100%; background-color:#c5bdb3; display:block; margin-bottom:5px; height:10px; }
+div header label:hover span{background-color:black;}
+div header nav{position:fixed; right:100px; top:35px; width:580px; transition:1s; overflow:hidden; font-size:25px; height:25px; z-index:10;}
+div header nav ul li{display:inline-block; margin-left:20px;}
+div header nav ul li a{color:#c5bdb3;}
+div header nav ul li a:hover{color:black;}
+
+
+footer{text-align:center; padding:30px 0; background-color:#e2ddd8; position:fixed; bottom:0; width:100%; z-index:-1;}
+
+@media only screen and (max-width:1200px){
+div header h1{font-size:50px;}
+}
+
+@media only screen and (max-width:800px){
+div header nav{right:30px; width:150px; overflow:hidden; height:auto; text-align:right; top:100px;}
+div header nav ul li{margin-bottom:20px;}
+div header input[type='checkbox']:checked ~ nav{width:0; overflow:hidden; transition:1s;}
+
+}
+@media only screen and (max-width:600px){
+div header h1{font-size:25px; min-width:350px; padding-bottom:33%;}
+}

@@ -1,0 +1,206 @@
+﻿/*checkArea*/
+.checkArea{overflow:hidden; position:relative;}
+.checkArea h2{display:none;}
+.checkArea ul {}
+.checkArea ul li{}
+.checkArea ul li figure{position:relative;}
+.checkArea ul li figure img{display:block; width:100%; height:740px; text-indent:-9999px;}
+.checkArea ul li:nth-of-type(2n + 2) figure img{background:url(../img/Slider01.jpg) no-repeat center top; background-size:cover;}
+.checkArea ul li:nth-of-type(2n + 1) figure img{background:url(../img/Slider02.jpg) no-repeat center center; background-size:cover;}
+.checkArea ul li figure figcaption{position:absolute; display:block; top:165px; width:100%; text-align:center;}
+.checkArea ul li figure figcaption dl{color:white;}
+.checkArea ul li figure figcaption dl dt{font-size:54px; font-weight:300; margin-bottom:22px;}
+.checkArea ul li figure figcaption dl dd{font-size:18px; line-height:2; font-weight:300;}
+
+/*checkArea Reservation*/
+.checkArea{margin-bottom:122px;}
+.checkArea .checkReservation{position:fixed; bottom:40px; width:100%; z-index:100;}
+.checkArea .checkReservation > ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.checkArea .checkReservation > ul{max-width:1240px; width:100%; height:120px; margin:0 auto; background-color:rgba(0,0,0,0.5);}
+.checkArea .checkReservation > ul li{float:left; color:white; text-align:center; height:100%; cursor:pointer; position:relative;}
+.checkArea .checkReservation > ul li:nth-of-type(n+1):nth-of-type(-n+2){width:26%;}
+/*.checkArea .checkReservation > ul li:nth-of-type(-n+2):hover{color:#FFF689;}*/
+.checkArea .checkReservation > ul li:nth-of-type(n+3):nth-of-type(-n+4){width:14%;}
+/*.checkArea .checkReservation > ul li:nth-of-type(n+3):nth-of-type(-n+4):hover{color:#FFF689;}*/
+.checkArea .checkReservation > ul li:nth-of-type(2),.checkArea .checkReservation ul li:nth-of-type(4){box-sizing:border-box; border-right:1px solid white;}
+.checkArea .checkReservation > ul li:first-of-type{position:relative;}
+.checkArea .checkReservation > ul li:nth-of-type(2):after{position:absolute; content:'→'; font-size:35px; /*right:-18px;*/ left:-12px; bottom:43px; }
+.checkArea .checkReservation > ul li.textColor{color:#e58f3a;}
+/*.checkArea .checkReservation > ul li:first-of-type:hover ~ li:nth-of-type(2):after,.checkArea .checkReservation > ul li:nth-of-type(2):hover:after{animation: arrowColor 2.5s linear infinite; }*/
+/*.checkArea .checkReservation > ul li.test:after{animation: arrowColor 2.5s linear infinite; }*/
+.checkArea .checkReservation > ul li:nth-of-type(3) dl{border-right:1px solid white;}
+.checkArea .checkReservation > ul li > dl dt{margin-top:30px; margin-bottom:12px; font-size:15px;}
+.checkArea .checkReservation > ul li > dl dd{font-size:36px;}
+.checkArea .checkReservation > ul li:last-of-type{width:20%;}
+.checkArea .checkReservation > ul li:last-of-type a{display:block; width:75%; padding:21px 0; margin:0 auto; margin-top:30px; background-color:white; border-radius:3px; font-size:18px; font-weight:400; position:relative;}
+.checkArea .checkReservation > ul li:last-of-type a:before{ animation: sparkle 4s infinite linear; background: linear-gradient(90deg, #7FEFBD 0%, #FFF689 11%, #EC0B43 22%, #7FEFBD 33%, #FFF689 44%, #EC0B43 55%, #7FEFBD 66%, #FFF689 77%, #EC0B43 88%, #7FEFBD 100%); background-size: 300% 100%; content: ""; position: absolute; left: -2%; top: -10%; width: 105%; height: 115%; border-radius: 4px; filter: blur(2px); z-index: -1; transform: scale(0.99) translateY(3px); transition:1s;}
+/*.checkArea .checkReservation > ul li:last-of-type a:hover:before{left:-18%; top:-32px; width:134%; height:193%; transition:1s;}*/
+.checkArea .checkReservation > ul li:last-of-type a:hover{background-color:#e58f3a;}
+@keyframes sparkle {
+  from {
+    background-position: 0% 100%;
+  }
+  to {
+    background-position: 200% 100%;
+  }
+}
+
+/*달력*/
+.checkArea .checkReservation div ul li:first-of-type:after{content:''; display:block; visibility:hidden; clear:both;}
+.checkArea .checkReservation div ul li:first-of-type{ opacity:1;}
+.checkArea .checkReservation div ul li:first-of-type table{float:left; width:42.5%;  text-align:center;}
+.checkArea .checkReservation div ul li:first-of-type table caption{text-indent:-9999px; display:inline-block;}
+.checkArea .checkReservation div ul li:first-of-type table:first-of-type{margin:0 5%;}
+.checkArea .checkReservation div ul li:first-of-type table tr:first-of-type th{font-size:24px; font-weight:400; padding-top:30px; padding-bottom:25px;}
+.checkArea .checkReservation div ul li:not(:first-of-type) table tr *{font-size:15px;}
+.checkArea .checkReservation div ul li:first-of-type table tr:nth-of-type(2) th{padding-bottom:8px;}
+.checkArea .checkReservation div ul li:first-of-type table tr td{padding:14px 0; cursor:pointer;}
+.checkArea .checkReservation div ul li:first-of-type table tr td.lastDay{opacity:0.3; cursor:default;}
+.checkArea .checkReservation div ul li:first-of-type table tr td.reservationDateCheck{background-color:#8d6205; color:white; position:relative;}
+.checkArea .checkReservation div ul li:first-of-type table tr td.reservationDateCheckPeriod{background-color:#b47f0d; color:white;}
+.checkArea .checkReservation div ul li:first-of-type > button{width:90%; display:block; margin:0 auto; margin-bottom:25px; padding:12px 0 ; font-size:17px; font-weight:400; color:#222222; border:1px solid #222222; border-radius:3px; background-color:white; cursor:pointer;}
+/*달력 prevNextCalenter button*/
+.checkArea .checkReservation > div ul li:first-of-type{position:relative;}
+/*.checkArea .checkReservation > div ul li:first-of-type div{position:absolute; top:20px; z-index:1;}*/
+.checkArea .checkReservation > div ul li:first-of-type div button{border:none; background-color:white; font-size:30px; color:#d6d6d6; cursor:pointer; position:absolute; top:20px; z-index:1;}
+.checkArea .checkReservation > div ul li:first-of-type div button:hover{color:#b47f0d;}
+.checkArea .checkReservation > div ul li:first-of-type div button:first-of-type{left:5%;}
+.checkArea .checkReservation > div ul li:first-of-type div button:last-of-type{right:5%;}
+
+
+/*달력 열기/닫기*/
+.checkArea .checkReservation div.calenderDisplayBlock{display:block;}
+.checkArea .checkReservation div.calenderDisplayBlock ul li:nth-of-type(2){display:none;}
+
+/* 성인 아이*/
+.checkArea .checkReservation > div{position:absolute; bottom:120px; width:100%; display:none; z-index:100;}
+.checkArea .checkReservation > div ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.checkArea .checkReservation > div ul{max-width:1240px; margin:0 auto;}
+.checkArea .checkReservation > div ul li:after{content:''; display:block; visibility:hidden; clear:both;}
+.checkArea .checkReservation > div ul li{float:left; width:52%; background-color:white;}
+.checkArea .checkReservation > div ul li:last-of-type{width:28%; margin-left:52%;}
+.checkArea .checkReservation > div ul li:last-of-type dl{float:left; width:50%; text-align:center; margin-bottom:30px;}
+.checkArea .checkReservation > div ul li:last-of-type dl dt{padding-top:30px; font-size:18px; font-weight:bold; color:#222; margin-bottom:20px;}
+.checkArea .checkReservation > div ul li:last-of-type dl dt span{display:block; width:100%; font-size:14px; color:#222; padding-top:8px;}
+.checkArea .checkReservation > div ul li:last-of-type dl dd{ width:85px; margin:0 auto; margin-bottom:4px; padding:5px 0; font-size:15px; color:#222; cursor:pointer;}
+.checkArea .checkReservation > div ul li:last-of-type dl dd:last-of-type{margin-bottom:0;}
+.checkArea .checkReservation > div ul li:last-of-type dl dd:hover{background-color:#b47f0d; color:white;}
+.checkArea .checkReservation > div ul li:last-of-type button{ width:82%; display:block; margin:0 auto; margin-bottom:25px; padding:15px 0 ; font-size:17px; font-weight:400; color:#222222; border:1px solid #222222; border-radius:3px; background-color:white; cursor:pointer;}
+                             
+.checkArea .checkReservation > div.adultChilderenDisplayBlock{display:block;}
+.checkArea .checkReservation > div.adultChilderenDisplayBlock ul li:first-of-type{display:none;}
+/*예약(성인/아이) 인원수 클릭*/
+.checkArea .checkReservation div ul li:last-of-type dl dd.NumberOfPeopleClick{background-color:#b47f0d; color:white;}
+
+
+/*checkArea swiper controller*/
+div.checkAreaPagination.swiper-pagination-bullets{position:absolute; text-align:center; -webkit-transition:.3s opacity; -o-transition:.3s opacity; transition:.3s opacity; -webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0); z-index:10; bottom:236px;}
+div.checkAreaPagination .swiper-pagination-bullet{width:3px; height:13px; border-radius:inherit; opacity:inherit; background-color:white;}
+div.checkAreaPagination .swiper-pagination-bullet:hover{transform:rotate(40deg);}
+div.checkAreaPagination .swiper-pagination-bullet-active{transform:rotate(40deg);}
+div.checkAreaPagination.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 10px;}
+
+/*serviceArea*/
+.serviceArea:after{content:''; display:block; visibility:hidden; clear:both;}
+.serviceArea{text-align:center; width:100%; max-width:1240px; margin:0 auto; margin-bottom:265px; position:relative;}
+.serviceArea h2{font-size:32px; margin-bottom:17px;}
+.serviceArea p{font-size:18px; margin-bottom:40px;}
+.serviceArea aside{float:left; width:160px; text-align:left; margin:75px 0;}
+.serviceArea aside ul li{font-size:18px; cursor:pointer; margin-bottom:30px; color:#d6d6d6;}
+.serviceArea aside ul li:hover{color:black;}
+.serviceArea aside ul li.active{color:black;}
+/*.serviceArea aside ul li.active i{color:blue;}*/
+.serviceArea aside ul li:last-of-type{margin-bottom:0;}
+.serviceArea aside ul li i{font-size:40px; width:60px; text-align:center; vertical-align:middle;}
+.serviceArea aside ul li:first-of-type:hover i{color:#c7a991;}
+.serviceArea aside ul li:nth-of-type(2):hover i{color:#cecdcd;}
+.serviceArea aside ul li:nth-of-type(3):hover i{color:#7cddfe;}
+.serviceArea aside ul li:last-of-type.active i{}
+.serviceArea aside ul li:first-of-type.activei{color:#c7a991;}
+.serviceArea aside ul li:nth-of-type(2).active i{color:#cecdcd;}
+.serviceArea aside ul li:nth-of-type(3).active i{color:#7cddfe;}
+.serviceArea > ul{float:left; width:calc(100% - 160px);}
+.serviceArea > ul li{display:none;}
+.serviceArea > ul li.tabContentDisplay{display:block;}
+.serviceArea > ul li figure{}
+.serviceArea > ul li figure div{margin-bottom:40px; height:400px; background:url(../img/tab_img01.jpg) no-repeat center center; background-size:cover;}
+.serviceArea > ul li:nth-of-type(2) figure div{background:url(../img/tab_img02.jpg) no-repeat center center;}
+.serviceArea > ul li:nth-of-type(3) figure div{background:url(../img/tab_img03.jpg) no-repeat center center;}
+.serviceArea > ul li:last-of-type figure div{background:url(../img/tab_img04.jpg) no-repeat center center;}
+.serviceArea > ul li figure figcaption{}
+.serviceArea > ul li figure figcaption dl{/*margin-left:460px;*/ margin-left:40%; text-align:left;}
+.serviceArea > ul li figure figcaption dl dt{font-size:24px; margin-bottom:17.5px;}
+.serviceArea > ul li figure figcaption dl dd{font-size:15px; color:#555; line-height:2;}
+.serviceArea > ul li div{width:100%; position:relative;}
+.serviceArea > ul li div span{position:absolute; bottom:-15px; left:-6px; color:white; font-size:100px; font-weight:bold;}
+.serviceArea:before{content:''; display:block; width:100%; max-width:1240px; height:16px; background:url(../img/ribbon_01.png) no-repeat center center; background-size:contain; position:absolute; bottom:-120px;}
+
+/*eventArea*/
+.eventArea{width:1240px; max-width:80%; margin:0 auto; text-align:center; position:relative; margin-bottom:100px;}
+.eventArea h2{font-size:32px; margin-bottom:15px;}
+.eventArea > p{font-size:18px; margin-bottom:40px; color:#555;}
+.eventArea > div:first-of-type{overflow:hidden; width:100%;}
+.eventArea div ul.swiper-wrapper{margin-bottom:60px; }
+.eventArea div ul li figure img{width:100%; margin-bottom:42px;}
+.eventArea div ul li figcaption{height:165px; position:relative; word-break:keep-all;}
+.eventArea div ul li figcaption dl{text-align:left; margin-bottom:45px;}
+.eventArea div ul li figcaption dl dt{font-size:24px; margin-bottom:15px;}
+.eventArea div ul li figcaption dl dd{font-size:15px; color:#666; line-height:1.8;}
+.eventArea div ul li figcaption span{position:absolute; bottom:0; left:0; font-size:15px; font-weight:500; color:#888;}
+.eventArea > a{font-size:18px; display:block; width:180px; margin:0 auto; padding:15px 0; border:1px solid; border-radius:5px;}
+
+.eventAreaController div{font-size:75px; background:none; color:#c8c8c8;}
+.eventAreaController div:hover{color:black;}
+.eventAreaController div:first-of-type{right:-70px;}
+.eventAreaController div:last-of-type{left:-80px;}
+
+
+.AdultChild{width:100px; height:500px; position:fixed;}
+@keyframes arrowColor {
+0% {color: red; left:-12px;}
+14.2%{color:orange;}
+28.4%{color:yellow;left:7%;}
+42.6%{color:green;}
+56.8%{color:blue;}
+71%{color:indigo; left:-20%;}
+85.2%{color:purple;}
+100%{color:red; left:-12px;}
+}
+
+/**/
+@media only screen and (max-width:1000px) {
+.checkArea .checkReservation > ul li:nth-of-type(2):after{display:none;}
+}
+@media only screen and (max-width:737px) {
+
+.checkArea{padding-top:110px;}
+.checkArea .checkReservation > ul{width:80%; height:auto;}
+.checkArea .checkReservation > ul li:nth-of-type(n+1):nth-of-type(-n+2),.checkArea .checkReservation > ul li:nth-of-type(n+3):nth-of-type(-n+4){width:50%;}
+.checkArea .checkReservation > ul li:nth-of-type(2), .checkArea .checkReservation ul li:nth-of-type(4){border:none;}
+.checkArea .checkReservation > ul li:last-of-type{width:100%; padding-bottom:30px;}
+.checkArea .checkReservation > ul li:nth-of-type(2):after{display:none;}
+.checkArea .checkReservation > ul li > dl dd{font-size:25px;}
+.checkArea ul li figure figcaption{top:100px;}
+div.checkAreaPagination.swiper-pagination-bullets{bottom:420px;}
+
+.checkArea .checkReservation > div ul li:first-of-type{width:100%; float:none; position:fixed; top:110px; height:85%; overflow-y:scroll;}
+.checkArea .checkReservation div ul li:first-of-type table:first-of-type{width:100%; margin:0;}
+.checkArea .checkReservation div ul li:first-of-type table:last-of-type{width:100%;}
+.checkArea .checkReservation > div ul li:first-of-type div button{top:5px; font-size:100px; line-height:0.5;}
+
+.checkArea .checkReservation > div ul li:last-of-type{width:100%; float:none; position:fixed; top:110px; margin-left:0;}
+.checkArea .checkReservation > div ul li:last-of-type dl dd{width:80%; padding:25px 0;}
+
+.serviceArea aside{float:none; width:90%; margin:0 auto;}
+.serviceArea aside ul:after{content:''; display:block; clear:both; visibility:hidden;}
+.serviceArea aside ul{text-align:center;}
+.serviceArea aside ul li{float:left; width:25%; }
+.serviceArea aside ul li i{display:block; width:100%; margin-bottom:20px;}
+.serviceArea > ul{float:none; width:95%; margin:0 auto;}
+
+.eventArea{max-width:95%;}
+.eventArea > div:first-of-type{margin-bottom:50px;}
+.eventArea > a{width:95%; padding:30px 0; font-size:30px;}
+.eventArea div ul li figcaption span{bottom:-45px;}
+
+}

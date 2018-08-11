@@ -1,0 +1,143 @@
+﻿a{text-decoration:none; }
+/*font*/
+*{font-family:'Atma';}
+
+/*bxslider 초기화*/
+.bx-wrapper{box-shadow:none; border:none; background:none;}
+
+html{height:100%;}
+body {text-align:center; background-color:black; }
+h1{width:100%; font-size:100px; background:url(../images/header.jpg) no-repeat left top; background-size:cover; font-weight:400; padding:105px 0; margin-bottom:40px; color:#25282a; position:relative; text-shadow:0px 0px 10px #73b0c3,
+                                                                                                                                                                                                                    0px 0px 10px #73b0c3,
+                                                                                                                                                                                                                    0px 0px 10px #73b0c3,
+                                                                                                                                                                                                                    0px 0px 10px #73b0c3,
+                                                                                                                                                                                                                    0px 0px 10px #73b0c3,
+                                                                                                                                                                                                                    0px 0px 10px #73b0c3,
+                                                                                                                                                                                                                    0px 0px 10px #73b0c3; 
+}  
+h1 span{ width:100%; display:block;}
+/*h1 span:nth-of-type(2){position:absolute; bottom:0; width:100%; height:4px; background-color:white; box-shadow:0 0 10px #ff005b,0 0 10px #ff005b,0 0 10px #ff005b,0 0 10px #ff005b; }
+h1 span:last-of-type{position:absolute; bottom:0; width:100%; height:4px; background-color:white;box-shadow: inset 0px 0px 3px 0px rgba(255,0,85,1); }*/
+h1 span:last-of-type{position:absolute; bottom:0; width:100%; height:4px; background-color:white;}
+
+/*collArea 부분*/
+.collArea:after{content:''; display:block; visibility:hidden; clear:both;}
+.collArea{width:90%; max-width:1240px; margin:0 auto;}
+.collArea li:after{content:''; display:block; clear:both; visibility:hidden;}
+.collArea li { float: left; width: calc( 25% - 10px); margin-right: 10px; margin-bottom: 10px; }
+.collArea li:nth-of-type(4n){margin-right:0;}
+.collArea li:hover { box-shadow: 0px 0px 10px 2px rgba(115,176,195,1); }
+.collArea li figure:after{content:'';display:block; visibility:hidden; clear:both;}
+.collArea li figure{position:relative;}
+.collArea li figure span{display:none; position:absolute; top:10px; right:10px; font-size:60px; color:white; z-index:1; cursor:pointer; transition:0.5s; text-shadow:0px 0px 5px black,
+                                                                                                                                                                     0px 0px 5px black,
+                                                                                                                                                                     0px 0px 5px black,
+                                                                                                                                                                     0px 0px 5px black,
+                                                                                                                                                                     0px 0px 5px black,
+                                                                                                                                                                     0px 0px 5px black,
+                                                                                                                                                                     0px 0px 5px black;
+}
+.collArea li:first-of-type figure span{font-size:25px;}
+.collArea li figure span:hover{text-shadow:0px 0px 5px rgba(115,176,195,1),
+                                           0px 0px 5px rgba(115,176,195,1),
+                                           0px 0px 5px rgba(115,176,195,1),
+                                           0px 0px 5px rgba(115,176,195,1),
+                                           0px 0px 5px rgba(115,176,195,1),
+                                           0px 0px 5px rgba(115,176,195,1),
+                                           0px 0px 5px rgba(115,176,195,1);
+}
+.collArea li figure img{float:left; width:100%; }
+.collArea li figure a{position:absolute; top:0; left:0; width:100%; height:100%;}
+.collArea li figure figcaption{float:left; background-color:#747474; width:100%; transition:0.5s;}
+.collArea li figure figcaption h2{font-size:20px; padding:10px 0; font-weight:bold; color:white; transition:0.5s;}
+.collArea li figure figcaption div{position:absolute; top:0; left:0; width:100%; height:calc(100% - 40px); background-color:rgba(255,161,168,0.8); background-color:rgba(00,00,00,0.8); transition:0.5s; opacity:0;}
+.collArea li figure figcaption div p{padding-top:50%; font-size:25px;}
+.collArea li:hover figure figcaption{background-color:#73b0c3;}
+.collArea li:hover figure figcaption h2{text-shadow:0px 0px 10px white,0px 0px 20px white;}
+.collArea li:hover figure figcaption div{opacity:1;}
+.collArea li:hover figure figcaption div p{color:white; text-shadow:0px 0px 5px rgba(115,176,195,1),
+                                                                    0px 0px 5px rgba(115,176,195,1),
+                                                                    0px 0px 5px rgba(115,176,195,1),
+                                                                    0px 0px 5px rgba(115,176,195,1),
+                                                                    0px 0px 5px rgba(115,176,195,1),
+                                                                    0px 0px 5px rgba(115,176,195,1),
+                                                                    0px 0px 5px rgba(115,176,195,1);}
+.collArea li figure figcaption dl{}
+.collArea li figure figcaption dl dt{}
+.collArea li figure figcaption dl dd{}
+
+/*추가페이지 */
+.addArea_bg{background-color:rgba(0,0,0,0.8); position:fixed; width:100%; height:100%; z-index:10; top:0; left:0; display:none;}
+.addArea_bg .addArea{background:white; min-width:700px; width:50%; min-height:500px; height:80%; display:block; z-index:10; overflow:auto; margin:0 auto; margin-top:5%; background-color:#747474;}
+.addArea_bg .addArea form{}
+.addArea_bg .addArea form fieldset{}
+.addArea_bg .addArea form fieldset legend{font-size:80px; color:white; font-weight:900; padding-top:50px; margin-bottom:50px;text-shadow:0px 0px 5px black,
+                                                                                                                                         0px 0px 5px black,
+                                                                                                                                         0px 0px 5px black,
+                                                                                                                                         0px 0px 5px black,
+                                                                                                                                         0px 0px 5px black,
+                                                                                                                                         0px 0px 5px black,
+                                                                                                                                         0px 0px 5px black;
+}
+.addArea_bg .addArea form fieldset ul{width:90%; margin:0 auto; text-align:left;}
+.addArea_bg .addArea form fieldset ul li{margin-bottom:25px; position:relative;}
+.addArea_bg .addArea form fieldset ul li label{font-size:30px;}
+.addArea_bg .addArea form fieldset ul li:nth-of-type(3) label{font-size:20px;}
+.addArea_bg .addArea form fieldset ul li input{width:40%; height:25px;}
+.addArea_bg .addArea form fieldset ul li img{width:50%; margin:0 auto;}
+
+
+/*popup*/
+.popup01{position:fixed; width:410px; top:10px; left:10px; background-color:white;}
+.popup01 h2{font-size:30px; font-weight:bold; color:white; padding:10px 0; text-shadow:0px 0px 5px black,
+                                                                                       0px 0px 5px black,
+                                                                                       0px 0px 5px black,
+                                                                                       0px 0px 5px black,
+                                                                                       0px 0px 5px black,
+                                                                                       0px 0px 5px black,
+                                                                                       0px 0px 5px black;
+}
+.popup01 p{font-size:20px;width:80%; margin:0 auto; word-break:keep-all; line-height:1.5; font-family: none;}
+.popup01 p span{color:white; text-shadow:0px 0px 5px #73b0c3,
+                                         0px 0px 5px #73b0c3,
+                                         0px 0px 5px #73b0c3,
+                                         0px 0px 5px #73b0c3,
+                                         0px 0px 5px #73b0c3,
+                                         0px 0px 5px #73b0c3,
+                                         0px 0px 5px #73b0c3;}
+.popup01 p:last-of-type{margin-bottom:10px;}
+.popup01 input[type='password']{margin-bottom:10px; margin-right:10px; border:none; box-shadow:0px 0px 5px #73b0c3,0px 0px 5px #73b0c3,0px 0px 5px #73b0c3; }
+.popup01 button{border:none; font-size:15px; font-weight:700; color:white; background-color:white; transition:0.5s; cursor:pointer; text-shadow:0px 0px 5px #73b0c3,
+                                                                                                                                0px 0px 5px #73b0c3,
+                                                                                                                                0px 0px 5px #73b0c3,
+                                                                                                                                0px 0px 5px #73b0c3,
+                                                                                                                                0px 0px 5px #73b0c3,
+                                                                                                                                0px 0px 5px #73b0c3,
+                                                                                                                                0px 0px 5px #73b0c3;}
+.popup01 button:hover{color:black;}
+.popup01 ul{position:absolute; width:100%; bottom:-30px;}
+.popup01 ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.popup01 ul li:first-of-type{float:left;}
+.popup01 ul li:last-of-type{float:right;}
+.popup01 ul li a{background:none; border:none; font-size:20px; color:white; cursor:pointer;}
+.popup01 ul li a:hover{color:white; text-shadow:0px 0px 10px white,0px 0px 20px white,0px 0px 30px white,0px 0px 40px white,0px 0px 50px white,0px 0px 60px white,0px 0px 70px white,0px 0px 80px white;}
+
+footer{width:100%; color:white;}
+
+@media screen and (max-width:1079px){
+    .collArea li { float: left; width: calc( 33% - 10px); margin-right: 10px; margin-bottom: 10px; }
+    .collArea li:nth-of-type(3n){margin-right:0;}
+    .collArea li:nth-of-type(4n){margin-right:10px;}
+}
+
+@media screen and (max-width:820px){
+    .collArea li figure figcaption h2{font-size:16px;}
+    .collArea li { float: left; width: calc( 50% - 10px); margin-right: 10px; margin-bottom: 10px; }
+    .collArea li:nth-of-type(3n){margin-right:10px;}
+    .collArea li:nth-of-type(2n){margin-right:0;}
+}
+
+
+
+
+

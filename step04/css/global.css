@@ -1,0 +1,10 @@
+﻿a{text-decoration:none;}
+body{background-color:black;}
+body > * {font-family:Economica;}
+.bx-wrapper{box-shadow:none; border:none; background:none;}
+
+header{background:url(../images/home_bg.png) no-repeat center center; background-size:cover; background-position-y:100%;}
+header .fp-tableCell{padding-top:3%;}
+header h1{text-indent:-9999px; background:url(../images/madmax.png) no-repeat center center; height:80%; background-size:contain; width:90%; margin:0 auto;}
+
+.galArea footer { text-align: center; color: #535152; }

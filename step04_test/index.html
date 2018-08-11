@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MADMAX2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--add jquery-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   
+    <!--fancyBox-->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+
+    <!--fullPage-->
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <!-- favicon Error -->
+    <link rel="shortcut icon" href="#" />
+
+    <!--bxslider-->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+
+    <!--stylesheet-->
+    <link href="css/import.css" rel="stylesheet" />
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            /*전체 fullpage*/
+            $('#fullpage').fullpage({
+                navigation: true,
+                navigationPosition: 'right',
+            });
+
+            /*traArea*/
+            $('.teb_content').hide();
+            $('.teb_content:first').show();
+            $('.traArea ol li a').click(function () {
+                $('.traArea ol li a').removeClass("active");
+                $(this).addClass('active');
+                $('.teb_content').hide();
+                var activeTab = $(this).attr('rel');
+                $('#' + activeTab).fadeIn();
+            });
+            /*criArea bxSlider*/
+            $('.critic_bxslider').bxSlider({
+                pager: false,
+                controls: true,
+                nextSelector: '.next',
+                prevSelector: '.prev',
+                nextText: '<',
+                prevText: '>',
+            });
+            /*crarArea bxSlider*/
+            $('.char_bxslide').bxSlider({
+                pager: true,
+                pagerCustom: '.char_bxslide_th',
+                controls: false,
+            });
+            $('.char_bxslide_th li').click(function () {
+                $('.char_bxslide_th li a').removeClass('char_active');
+                $(this + 'a').addClass('char_active');
+            });
+
+            /*vehArea*/
+            $('.vexh_bxslider1').bxSlider({
+                pager: false,
+                nextSelector: '.vieh_control1',
+                nextText: '▶'
+            });
+
+            /*vehiArea*/
+            $('.vexh_bxslider2').bxSlider({
+                pager: false,
+                prevSelector: '.vieh_control2',
+                prevText: '◀'
+            });
+
+            /*galArea*/
+            $('.fancybox').fancybox();
+        });
+
+    </script>
+</head>
+<body >
+    <div id="fullpage">
+        <header class="section">
+            <h1>madmax</h1>
+            <nav>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="stoArea section">
+            <h2>STORY</h2>
+            <label for="story">▶</label>
+            <input type="checkbox" id="story" />
+            <p>From director George Miller, originator of the post-apocalyptic genre and mastermind behind the legendary “Mad Max” franchise, comes “Mad Max: Fury Road,” a return to the world of the Road Warrior, Max Rockatansky. Haunted by his turbulent past, Mad Max believes the best way to survive is to wander alone. Nevertheless, he becomes swept up with a group fleeing across the Wasteland in a War Rig driven by an elite Imperator, Furiosa. They are escaping a Citadel tyrannized by the Immortan Joe, from whom something irreplaceable has been taken. Enraged, the Warlord marshals all his gangs and pursues the rebels ruthlessly in the high-octane Road War that follows.</p>
+        </article>
+
+        
+        <section class="traArea section">
+        <h2>TRAILER</h2>
+        <div class="tab_container">
+            <div id="tab1" class="teb_content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hEJnMQG9ev8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div id="tab2" class="teb_content">
+                <iframe src="https://www.youtube.com/embed/YWNWi-ZWL3c" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+            <div id="tab3" class="teb_content">
+                <iframe src="https://www.youtube.com/embed/akX3Is3qBpw" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+        </div>
+        <ol>
+            <li ><a href="#" rel="tab1" class="active">Main Trailer</a> </li>
+            <li ><a href="#" rel="tab2" >Theatrical Teaser Trailer</a></li>
+            <li ><a href="#" rel="tab3" >Comic-Con First Look </a></li>
+        </ol>
+        </section>
+
+        <section class="criArea section">
+            <h2>critic review</h2>
+            <!--bxslider 컨트롤러-->
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
+            <ul class="critic_bxslider">
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h3>Blockbuster showing the essence of the movie</h3>
+                    <blockquote>
+                        <p>At the moment of boarding, the pleasure of running without interruption for only 120 seconds. There are different kinds of peripheral pleasures. Everything from film directing, action, shooting, music, art, costumes, acting to actors makes us look back on what the essence of the movie we saw in the past. The moment you see it, you will not be able to shake the image of this hell.</p>
+                    </blockquote>
+                    <figure>
+                        <img src="images/LeeHeajeong.jpg" alt="LeeHeajeong" />
+                        <figcaption>
+                            <dl>
+                                <dt>Lee Hwajeong</dt>
+                                <dd>(Cine 21 reporter)</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h3>The Perfect Resurrection of the Legend</h3>
+                    <blockquote>
+                        <p>I did not miss the details of the action while I was running through like crazy. There is nothing short of developing into a new series, with a strong and powerful story, a wonderful character, a scale, action densities and freshness, and a charming world view mixed with cynicism and hope. Welcome back, George Miller!</p>
+                    </blockquote>
+                    <figure>
+                        <img src="images/LeeSukmyeong.jpg" alt="LeeSukmyeong" />
+                        <figcaption>
+                            <dl>
+                                <dt>Lee Sukmyeong</dt>
+                                <dd>(Movie journalist)</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h3>Welcome to [Mad Max] World!</h3>
+                    <blockquote>
+                        <p>Streaking and chasing, the pinnacle of its simple aesthetics. From the beginning to the end, I get the feeling of being dragged away without being caught in the throat. [Mad Max], who came back in 30 years with a message about the method of finding hope in the land of survival, came back.</p>
+                    </blockquote>
+                    <figure>
+                        <img src="images/LeeEunseon.jpg" alt="LeeEunseon" />
+                        <figcaption>
+                            <dl>
+                                <dt>Lee Eunseon</dt>
+                                <dd>(Magazine ‘M’ reporter)</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h3>New Legend, Masterpiece</h3>
+                    <blockquote>
+                        <p>A chain of elegant, furious, and dense car action. The design of the action to be overcome is satisfactory both in density and quality. The return of the wheeled western. A camera movement that makes you imagine what you "take" instead of "drawing" your imagination. It's not just cars that run. Silent film armed with metal sound. At least the car chasing action will be divided before and after [Mad Max: Road of Rage].</p>
+                    </blockquote>
+                    <figure>
+                        <img src="images/SongGyeongwon.jpg" alt="SongGyeongwon" />
+                        <figcaption>
+                            <dl>
+                                <dt>Song Gyeongwon</dt>
+                                <dd>(Cine 21 reporter)</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="chaArea section">
+            <div>
+                <h2>CHARACTER</h2>
+                <ol class="char_bxslide_th">
+                    <li><a href="#" data-slide-index="0" class="char_active">MAX</a></li>
+                    <li><a href="#" data-slide-index="1">FURIOSA</a></li>
+                    <li><a href="#" data-slide-index="2">NUX</a></li>
+                    <li><a href="#" data-slide-index="3">IMMORTAN</a></li>
+                </ol>
+            </div>
+            <ul class="char_bxslide">
+                <li>
+                    <figure>
+                        <img src="images/max.jpg" alt="maxImg" />
+                        <figcaption><img src="images/MAXNAME.png" alt="maxName" /></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/furiosa.jpg" alt="furiosaImg" />
+                        <figcaption><img src="images/FURIOSANAME.png" alt="furiosaName" /></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/nux.jpg" alt="nuxImg" />
+                        <figcaption><img src="images/NUXNAME.png" alt="nuxName" /></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/immortan.jpg" alt="immortanImg" />
+                        <figcaption><img src="images/IMMORTANNAME.png" alt="immortanName" /></figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="vehArea section">
+            <h2>VEHICLE SHOWCASE</h2>
+
+                
+            <ul class="vexh_bxslider1">
+                <li>
+                    <figure>
+                        <img src="images/GIGAHORSE.png" alt="gigahorse" />
+                        <figcaption>
+                            <dl>
+                                <dt>THE GIGAHORSE <span><a href="#" class="vieh_control1"></a></span> </dt>
+                                <dd><p> PAIR OF 1959 CADILLAC COUPE DE VILLES IN FLAGRANTE DELICTO ARE SPLIT, WIDENED AND MOUNTED ONE TO THE OTHER, PITCHED AT A RAKISH ANGLE BY HUGE DOUBLE REAR WHEELS AND POWERED BY TWIN V8'S SLAVED TO A HANDMADE GEARBOX CAPABLE OF HARNESSING AND HARMONISING THE ULTIMATE POWER OF THE ULTIMATE LEADER. THE FLAGSHIP OF THE CITADEL'S ARMADA, THE GIGAHORSE IS MEMORY OF PAST GLORY AND PLEDGE OF FUTURE VICTORY. ARMED WITH WHALER'S HARPOON AND THE DEVIL'S OWN FLAMETHROWER, THE GIGAHORSE IS LIKELY THE FIRST THING YOU HEAR AND THE LAST THING YOU SEE ON THE FURY ROAD.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/DOOF-WAGON.png" alt="doof_wagon" />
+                        <figcaption>
+                            <dl>
+                                <dt>DOOF WAGON <span><a href="#" class="vieh_control1"></a></span> </dt>
+                                <dd><p>EVERY ARMY HAS A LITTLE DRUMMER BOY, TO KEEP THE BEAT AND STIR THE HEART, AND THE WAR BOYS OF THE WASTELAND ARE N EXCEPTION. HERE, MOUNTED DRUMMERS POUND A TAIKO BEAT ON HUGE RESONATORS BUILT OF AIRXON DUCT, WHILE COMA THA DOOF WARRIOR, BLIND AND DISFIGURED, SLUNG IN A WEB OF BUNGY AND SPREAD-EAGLED BEFORE A STACK OF SPEAKERS, HURTLES ACROSS THE DESERT LANDSCAPE ON A REPURPOSED 8X8 M.A.N MISSILE-CARRIER. THE WAIL OF THE BANCHEE. THE DISTORTED LICK AND DEMENTEDM, DRIVING BASS, THE CALL TO ARMS AND THE BAYING FOR BLOOD. ALL MUSIC TO THE EARS AND GRIST TO THE MILL, A SYMPONY, A SONG, A SINGEL SCREAM, THE SOUNDTRACK TO THE END OF CIVILISATION. BUT WE GO OUT DANCING.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/FIRECAR.png" alt="firecar" />
+                        <figcaption>
+                            <dl>
+                                <dt>FIRECAR <span><a href="#" class="vieh_control1"></a></span></dt>
+                                <dd><p>1970'S HOLDEN HZ UTE TRIMMED IN RADIAL RUBBER AND BLEACHED BONM, A GASTOWN CHASE VEHICLE BUILT FOR BRUTALITY AND BBQ. THUNDERSTICKS FROM FRONT AND GUNNELS AND FLAMETHROWER FROM TH REAR TRAY. DRIVER, SHOTGUN, LANCERS AND GUNNERM, A SLICK TEAM TO SWAMP AND SLOW THE QUARRY FOR THE FOLLOWING POLECATS TO PURSUE, PILLAGE AND PLUNDE.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/MACK.png" alt="mack" />
+                        <figcaption>
+                            <dl>
+                                <dt>MACK <span><a href="#" class="vieh_control1"></a></span></dt>
+                                <dd><p>MACK IS THE CITADEL TOW TRUCK, THE BULLDOG IN CHARGE OF SWEEPING BEHIND THE ARMADA COLLECTING AND RECYCLING THE SPOILS OF WAAR AND LOADING THE CAR CARIER LUMBERING BEHIND THE OFFENSIVE WITH PRECIOUS SALVAGE. LIKE THE REST OF THE FLEET MACK IS A HEAVY-DUTY RECOVERY VEHICLE NOT IMMUNE TO THE CALL TO ARMS AND HELL-BENT ON HURLING HARPOONS AND A HAIL OF BULLETS AT ANY AND ALL CAUGHT UNAWARES ON THE FURY ROAD.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/PEACEMAKER.png" alt="peacemaker" />
+                        <figcaption>
+                            <dl>
+                                <dt>THE PEACEMAKER<span><a href="#" class="vieh_control1"></a></span> </dt>
+                                <dd><p>WHO DARES TO JOCKEY A WATER-COOLED MERLIN V8 IN THE DRY DESERTS OF THE APOCALYPSE? THE SAME MAN WHO MARRIES MUSCLE CAR AND MACHINE GUN, TANK TREAD AND TORPEDO, ARSENAL AND ANGST - THE BULLET FARMER. A HIGH-SPEED, HIGHLY MANOEUVRABLE, GO ANYWHERE MACHINE WITH MORE ARTILLERY THAN YOUR BASIC DEATH CULT AND LESS MORAL COMPUNCTION. THE PEACEMAKER IS A '70'S VALIANT BRONZE WHALER AND DEVOURER OF DESERT SAND AND OF MEN.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/PLOUGHBOY.png" alt="ploqughboy" />
+                        <figcaption>
+                            <dl>
+                                <dt>THE PLOUGHBOY<span><a href="#" class="vieh_control1"></a></span></dt>
+                                <dd><p>AN EH WAGON JACKED UP OVER AN OFF-ROAD FRAME AND RIGGED WITH HARPOON AND HYDRAULIC-DRIVEN PLOUGH TO TAG DRAG VICTIMS TO AN EVENTUAL STANDSTILL AND INEVITABLE 'HARVEST'. ONCE A CITADEL CONVOY VEHICLE THE PLOUGBOY WAS SOLD, STOLEN OF SALVAGED AND REPURPOSED AS A TRACTOR IN THE BULLET FARM PLAINS, TILLING THE BLOODIED EARTH FOR SPENT CARTRIDGE, CARILAGE AND CORPSE.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/THE-BIG-FOOT.png" alt="the_big_foot" />
+                        <figcaption>
+                            <dl>
+                                <dt>THE BIG FOOT<span><a href="#" class="vieh_control1"></a></span></dt>
+                                <dd><p>WEAPON OF CHOICE FOR RICTUS, THE FIRST AND SOMEWHAT DAMAGED SON OF THE IMMORTAN JOE. AT ALMOST 7FT TALL THIS WARRIOR NEEDS A LOT OF CAR. THE HEAVY 1940'S BEATEN STEEL OF A FARGO WORKHORSE HOUSES A SUPERCHARGED V8 TAMED BY TURBO 400 AUTO TRANSMISSION DRIVING 66-INCH TERRA TYRES VIA A PLANETARY GEAR REDUCTION HUB SET IN HEAVY DUTY AXLES FROM AN EX-MILITARY SUPER TANKER.FOUR FOOT OF SUSPENSION TRAVEL AND ALMOST 600 CUBIC INCHES OF DISPLACEMENT MAKE IT THE ONLY VEHICLE CAPABLE OF CLIMBING A FALLEN MOUNTAIN WITH THE IMMORTAN HIMSELF IN THE DRIVER'S SEAT AND HIS SON JOCKEYING HARPOON AND BELT-DREIVEN MACHINE GUN. BOUND TO END IN TEARS...</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/WARRIG.png" alt="warrig" />
+                        <figcaption>
+                            <dl>
+                                <dt>THE WAR RIG<span><a href="#" class="vieh_control1"></a></span></dt>
+                                <dd><p>MUTANT LOVECHILD OF SEMI-TRAILER AND HOTROD, TWIN V8'S END-TO-END, 6 WHEEL-DRIVE, EIGHTEEN-WHEELED LEVIATHAN CHARGED WITH THE BARTER OF FLUIDS AND FIREARMS THAT BINDS THE THREE CITY-STATES OF THE WASTELAND IN TENUOUS ALLIANCE. SHE (AND 'SHE' SHE MOST DEFINITELY IS) BESTRIDES THE FURY ROAD, A BEAST OF WAR AS MUCH A BEAST OF BURDEN, PILOTED BY THE MOST TRUSTED WARRIOR AND HERALDED DRIVER OF THE CITADEL, FURIOSA. A DOZEN ELITE WAR BOYS HUNKER DOWN ON THE TRUCK AND TRAILERS OF THIS MASSIVE MACHINE AND A CONVOY OF CARS AND MOTORBIKES TRACK WITH HER ACROSS THE DESERT, A FINGER TO TEH APOCALYPSE AND THE DOWNFALL OF MAN. BRING IT ON...</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        
+        </section>
+
+        <section class="vehiArea section">
+            <h2>VEHICLE SHOWCASE</h2>
+            <ul class="vexh_bxslider2">
+                <li>
+                    <figure>
+                        <img src="images/INTERCEPTOR.png" alt="interceptor" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>INTERCEPTOR</dt>
+                                <dd>MAX'S ORIGINAL MUSCLE CAR, THE GLORIOUS XB FALCON COUPE-ONCE OF THE HIGHWAY NOW A WOUNDED BEAST OF SALVAGE AND SAND, FORCED OFFROAD AND RUNNING ON THE SMELL OF AN ONLY RAG.SCOTT HAT AND BELT-DRIVEN BLOWER INTACT BUT BATTERED, TYRE MORE RAG THAN RUBBER, RUSTED THRUGH AND RATTLING WITH ONE TOO MANY REPAIRS AND FAR TOO FEW ORIGINAL PARTS. A LEGEND SPOTTED IN THE GUTTER, PUNCH DRUNK BUT STILL PROUD, LEFT BEHIND BY HISTORY'S DOWNWARD SPIRAL, OUT OF PLACE BUT NEVER OUT OF CONTENTION...SIMPLY THE BEST, TINA.</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/BUGGY.png" alt="buggy" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>BUGGY</dt>
+                                <dd><p>THE PERENTTI (TWO T'S LIKE ING CORVETTE, GET IT?) WAS A CLASSIC AUSTRALIAN MISTAKE - A SPORTS CAR MODELLED AFTER AMERICAN MUSCLE CARS YET GIVEN A FIBREGLASS MONOCOQUE BODY AND PITCHED AT THE MID-LIFE CRISIS MARKET. HERE IN THE APOCALYPSE, WHERE MANKIND IS HAVING AN ALTOGETHER MORE CRUCIAL BREAKDOWN. THE PERENTTI LOOKS ALMOST RIGHT YET SEEMS TO CRAVE A VERY LARGE GUN TO GAIN LEGITIMACY AND STREET CAREDIBILITY.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/BUICK.png" alt="buick" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>BUICK</dt>
+                                <dd><p>BEATEN AND POLISHED, STRIPPED AND SHINING, STRADDLING AN EXTENDED REAR DIFF AND DOUBLE REAR WHEELS. THE BUICK IS THE STANDARD BEARER AND PERSONAL GUARD FOR THE THE GIGAHORSE AND IMMORTAN JOE. A BACK UP CREW OF TRUSTED WAR BOYS HUNKER CLOSE BY TO SUPPLY COVER FIRE FROM A SLEW-RING TURRET AND ANTI-AIRCRAFT GUN, EVER READY TO MAKE THE LEAP AS REINFORCEMENT OR RETALIATION.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/CRANKYFRANK.png" alt="crankyfrank" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>CRANKY FRANK</dt>
+                                <dd><p>THE RADICALLY CHOP-TOPPED HOLDEN FJ RAT ROD WITH A 4-INTAKE SUPERCHARGED V8 HURTLES A CREW OF TWO-A DRIVER BLINDED BY A TOWER OF CARBURETTORS AND A BELT-DRIVEN BLOWER ALONG WITH A TAIL-GUNNER EATING DUST AND SPITTING DEATH AND CALTROPS FROM THE REAR TRAY. CRANKY FRANK IS THE TRUSTED IF PSYCHOTIC POINT MAN FOR IMMORTAN'S PERSONAL RETINUE, CONVOY GUARD AND GUIDE TO THE GIGAHORSE; THE BEAST THAT PUT THE 'S' IN CAR AND THE 'F' IN UTILITY.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/DODGE.png" alt="dodge" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>DODGE</dt>
+                                <dd><p>THE PREMIER FIRE OF THE CITADEL, A FLAME-THROWING ATTACK DOG 'LIBERATED' FROM GASTOWN, PITCHED IN THE CITADEL'S BLACK LIVERY AND PRESSED INTO SERVICE IN THE GREAT CHASE. AN OLD SCHOOL HOT ROD, ASPIRATER WITH A ROOTS BLOWER MOUNTED LOW AHEAD OF THE RADIATOR, SUCKING IN AIR DUST IN NEAR EQUAL PROPORTION AND THEREFORE SPORTING THE SECOND-TO-LAST PAIR OF PANTYHOSE IN CHRISTNDOM AS A FILTER. A GREAT DRIVER, AND ALSO NITROUS ASSISTED, THE DODGE RUNS A HEALTHY COMPETITION WITH NUX'S CAR. IT REACHES THE QUARRY ALMOST AS QUICKLY.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/ELVIS.png" alt="" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>ELVIS</dt>
+                                <dd><p>A PAIR OF GMC 6'S SLUNG END-TO-END ON THE EXTENDED CHASSIS RAILS OF A 3-WINDOW COUPE MAKE FOR THE CUTTURAL RUMBLING OF A V12. WITH NITROUS INJECTION AND A SINGLE GUNNER KEEPING THE POWER TO WEIGHT RATIO WAY DOWN ELVIS EARNS HIS PLACE AS THE HI-SPEED OUTRIDER OF THE WAR RIG CONVOY, THE HEARTBEAT OF BARTER ON THE FURY ROAD.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/FDK.png" alt="fdk" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>FDK</dt>
+                                <dd><p>A SUPERCHARGED V8 VOLKSWAGEN, FDK OPERATES AS CONVOY GUARD FROM GASTOWN FOR THE PEOPLE EATER'S MERCEDES LIMOUSINE; THE HORIZONTAL CRACKING TOWER THAT IS THE FUEL TRUCK. FDK'S SLICK SILVER FINISH, THE DRUMS OF FUEL, THE DOUBLE-BARRELLED FLAMETHROWER AND THE TRIPLE EXHAUST PIPES ARE LOVE POEMS TO THE HUGE MACHINE HEATING AND COUDENSING AND EXCRETING PRECIOUS GUZZOLENE AS IT ROARS ACROSS THE EMPTY PLAINS IN PURSUIT AND PILLAGE.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/NUXCAR.png" alt="nuxcar" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span> THE NUX CAR</dt>
+                                <dd><p>A SUPER-TURBOCHARGED, NITROUS-BOOSTED 5-WINDOW DEUCE COUPE. THIS VEHICLE IS EVERY HOTRODDER'S DREAM AND THE PERFECT CHARIOT FOR YOUNG NUX, A TRUE BELIEVER AND GUN DRIVER IN THE CITADEL ARMADA WHO PUTS THE FUN BACK IN FUNDAMENTAL AND WHOSE FAILING FLESH FETISHIZES THE FURY AND POWER OF THE V8 HE HOPES WILL LEAD HIM TO VALHALLA. NUX IS THE DELIVERER OF DEATH, THE FAN NAD THE FANATIC, A LOYAL SERVANT AND LETHAL SAVANT AND THE CAR IS HIS ART, HOPE AND HEART. </p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/PLYMOUTH-ROCK.png" alt="plymouth_rock" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span> PLYMOUTH ROCK </dt>
+                                <dd><p>THE BUZZARDS WERE THE BASEST OF THE TRIBES OF THE WASTELAND, HYENAS HARRYING THE HUNTER WITH SPIKE AND SHARD, SWARMING IING PACKSM SNAPPING AND SAWING AT ANYONE FOOLISH ENOUGH TO VENTURE INTO THE BADLANDS SURROUNDING THE LAST ROAD. CARRION EATERS, THEY WAGED THE WAR OF SCRAP MERCHANTS NOT MECHANICS, SOUGHT NOT SALVAGE AND REBIRTH BUT RAW MATERIAL TO CONSUM; SAW STEEL NOT SEDAN, MEAT NOT MAN.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/PRINCE-VALIANT.png" alt="prince_valiant" />
+                        <figcaption>
+                            <dl>
+                                <dt><span><a href="#" class="vieh_control2"></a></span>PRINCE VALIANT</dt>
+                                <dd><p>A FIRE-BREATHING VALIANT CHARGER V8 MUSCLE CAR OF AUSTRALIAN HERITAGE. WITH PAINT STRIPPED AWAY BY SANDSTORM AND SPEED AND SPORTING THE RUSTED METAL STYLING OF FLAME OVER BONNET AND GUARD, THE CAR IS A GASTOWN EMISSARY ARMED WITH HIGH-VOLUME FLAMETHROWER AND MOLOTOV GRENADES AND A CREW OF THREE INTENDED FOR INITIAL ASSAULT AND HIGH-SPEED CHASE.</p></dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="galArea section">
+            <h2>GALLERY</h2>
+            <ul>
+                <li>
+                    <a class="fancybox" href="images/fx_0001.jpg">
+                        <img src="images/fx_01.png" alt="gallery_01"/>
+                    </a>
+                </li>
+                <li>
+                     <a class="fancybox" href="images/fx_0002.jpg">
+                         <img src="images/fx_02.png" alt="gallery_02" />
+                    </a>
+                </li>
+                <li>
+                      <a class="fancybox" href="images/fx_0003.jpg">
+                          <img src="images/fx_03.png" alt="gallery_03" />
+                    </a>
+                </li>
+                <li>
+                    <a class="fancybox" href="images/fx_0004.jpg">
+                        <img src="images/fx_04.png" alt="gallery_04" />
+                    </a>
+                </li>
+                <li>
+                    <a class="fancybox" href="images/fx_0005.jpg">
+                        <img src="images/fx_05.png" alt="gallery_05" />
+                    </a>
+                </li>
+                <li>
+                    <a class="fancybox" href="images/fx_0006.jpg">
+                        <img src="images/fx_06.png" alt="gallery_06" />
+                    </a>
+                </li>
+                <li>
+                    <a class="fancybox" href="images/fx_0007.jpg">
+                        <img src="images/fx_07.png" alt="gallery_07" />
+                    </a>
+                </li>
+                <li>
+                    <a class="fancybox" href="images/fx_0008.jpg">
+                        <img src="images/fx_08.jpg" alt="gallery_08" />
+                    </a>
+                </li>
+                <li>
+                    <a class="fancybox" href="images/fx_0009.jpg">
+                        <img src="images/fx_09.png" alt="gallery_09" />
+                    </a>
+                </li>
+                <li>
+                   <a class="fancybox" href="images/fx_0010.jpg">
+                       <img src="images/fx_10.png" alt="gallery_10" />
+                    </a>
+                </li>
+            </ul>
+
+        <footer>ⓒ2017 korean KimSungEun</footer>
+        </section>
+
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿.reservationCalender{width:100%; max-width:1240px; margin:0 auto; margin-bottom:80px;  position:relative;}
+.reservationCalender h2{font-size:32px; font-weight:400; width:150px; margin:0 auto; padding-top:60px; margin-bottom:90px; text-align:center; position:relative;}
+.reservationCalender h2:after{content:''; display:block; background:url(../img/ribbon_01.png) no-repeat center center; width:150px; height:15px; position:absolute; bottom:-45px;}
+
+.reservationCalender > ul:after{content:''; display:block; clear:both; visibility:hidden;}
+.reservationCalender > ul{width:1245px; width:100%; margin:0 auto;}
+.reservationCalender > ul li{float:left; font-size:15px; width:33.3%; text-align:center; color:black; font-weight:400; cursor:pointer; padding-bottom:20px; border-bottom:3px solid #222; box-sizing:border-box; margin-bottom:75px;}
+.reservationCalender > ul li:not(:first-of-type){color:#666; font-weight:100; border-bottom:3px solid #ddd;}
+
+.reservationCalender ol:after{content:''; display:block; visibility:hidden; clear:both;}
+.reservationCalender ol{width:100%; max-width:1160px; margin:0 auto; margin-bottom:30px;}
+.reservationCalender ol li{float:left; width:47.5%; margin-right:5%; text-align:center;}
+.reservationCalender ol li:last-of-type{margin-right:0;}
+.reservationCalender ol li table{width:100%;}
+.reservationCalender ol li table caption{text-indent:-9999px; display:none;}
+.reservationCalender ol li table tr{width:100%;}
+.reservationCalender ol li table tr:first-of-type th{font-size:24px; padding:30px; border-bottom:1px solid #eee; font-weight:400;}
+.reservationCalender ol li table tr:nth-of-type(2) th{padding:40px 0 25px 0;}
+.reservationCalender ol li table tr th{font-weight:400;}
+.reservationCalender ol li table tr td{color:#666; padding:20px 0; cursor:pointer;}
+.reservationCalender ol li table tr td.reservationDateCheckPeriod{background-color:#b47f0d; color:white;}
+.reservationCalender ol li table tr td.reservationDateCheck{background-color:#8d6205; color:white;}
+.reservationCalender ol li table tr td.lastDay{opacity:0.3; cursor:default; background-color:white;}
+.reservationCalender ol li table tr td.test{color:blueviolet;}
+
+.reservationCalender section{max-width:1240px; width:98%; margin:0 auto; border:1px solid #b5b5b5;}
+.reservationCalender section ul:after{content:''; display:block; visibility:visible; clear:both;}
+.reservationCalender section ul li{float:left; padding:26px 0; text-align:center;}
+.reservationCalender section ul li:nth-of-type(-n+2){width:25%; min-width:200px;}
+.reservationCalender section ul li:nth-of-type(n+3):nth-of-type(-n+4){width:10%; min-width:90px;}
+.reservationCalender section ul li:not(:last-of-type){padding-top:44px;}
+.reservationCalender section ul li dl:after{content:''; display:block; visibility:visible; clear:both;}
+.reservationCalender section ul li dl dt{display:inline; font-size:15px; color:#666; margin-right:20px;}
+.reservationCalender section ul li dl dd{display:inline; font-size:24px;}
+.reservationCalender section ul li button{width:135px; font-size:16px; color:white; background-color:#222; text-align:center; padding:17px 0 15px 0; border:none;  border-radius:5px; cursor:pointer; }
+.reservationCalender section ul li:last-of-type{float:right; margin-right:5%;}
+.reservationCalender section ul li:nth-of-type(3),.reservationCalender section ul li:nth-of-type(4){cursor:pointer;}
+
+/*.reservationCalender ol:after{content:''; display:block; visibility:hidden; clear:both;}
+.reservationCalender ol{width:1160px; margin:0 auto;}
+.reservationCalender ol li{float:left; width:42.5%; margin-right:5%;}
+.reservationCalender ol li:last-of-type{margin-right:0;}
+.reservationCalender ol li table caption{text-indent:-9999px; display:none;}
+.reservationCalender ol li table{width:100%;}
+.reservationCalender ol li table tr{width:100%;}
+.reservationCalender ol li table tr:first-of-type th{text-align:center; width:100%;}
+.reservationCalender ol li table tr:after{content:''; display:block; visibility:hidden; clear:both;}
+.reservationCalender ol li table tr:nth-of-type(2) th{float:left; display:block; width:14%; text-align:center;}
+.reservationCalender ol li table tr td{float:left; display:block; width:14%; text-align:center;}*/
+.reservationCalender div:first-of-type{position:absolute; background-color:white; bottom:110px; border:1px solid; display:none;}
+.reservationCalender div:first-of-type {width:28%; margin-left:52%;}
+.reservationCalender div:first-of-type dl{float:left; width:50%; text-align:center; margin-bottom:30px;}
+.reservationCalender div:first-of-type dl dt{padding-top:30px; font-size:18px; font-weight:bold; color:#222; margin-bottom:20px;}
+.reservationCalender div:first-of-type dl dt span{display:block; width:100%; font-size:14px; color:#222; padding-top:8px;}
+.reservationCalender div:first-of-type dl dd{ width:85px; margin:0 auto; margin-bottom:4px; padding:5px 0; font-size:15px; color:#222; cursor:pointer;}
+.reservationCalender div:first-of-type dl dd:last-of-type{margin-bottom:0;}
+.reservationCalender div:first-of-type dl dd:hover{background-color:#b47f0d; color:white;}
+.reservationCalender div:first-of-type button{ width:82%; display:block; margin:0 auto; margin-bottom:25px; padding:15px 0 ; font-size:17px; font-weight:400; color:#222222; border:1px solid #222222; border-radius:3px; background-color:white; cursor:pointer;}
+
+.reservationCalender div:first-of-type dl dd.NumberOfPeopleClick{background-color:#b47f0d; color:white;}
+.reservationCalender div:first-of-type.display{display:block;}
+
+
+.reservationCalender div:last-of-type{position:relative; }
+.reservationCalender div:last-of-type button{position:absolute; top:-410px; background-color:white; font-size:100px; border:none; cursor:pointer; opacity:0.3;}
+.reservationCalender div:last-of-type button:hover{opacity:1; color:#b47f0d;}
+.reservationCalender div:last-of-type button:first-of-type{left:-100px;}
+.reservationCalender div:last-of-type button:last-of-type{right:-100px;}
+
+@media only screen and (max-width:1000px) {
+.reservationCalender div:last-of-type{display:none;}
+}
+@media only screen and (max-width:737px) {
+.reservationCalender ol{height:500px; overflow-y:scroll;}
+.reservationCalender ol li{float:none; width:90%; margin:0 auto;}
+.reservationCalender ol li:last-of-type{margin:0 auto;}
+
+.reservationCalender section ul li:nth-of-type(-n+2){width:50%;}
+.reservationCalender section ul li:nth-of-type(n+3):nth-of-type(-n+4){width:50%;}
+.reservationCalender section ul li:last-of-type{width:100%; margin-right:0;}
+.reservationCalender section ul li button{width:80%; margin:0 auto;}
+
+.reservationCalender div:first-of-type{width:100%; margin-left:0; bottom:300px;}
+.reservationCalender div:first-of-type dl dd{width:80%; padding:25px 0;}
+}

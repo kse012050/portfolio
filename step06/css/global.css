@@ -1,0 +1,128 @@
+﻿*{font-family:'Roboto', 'Noto Sans KR', sans-serif; font-weight:300;}
+a{text-decoration:none; color:black;}
+body{overflow-x:hidden;}
+
+/*메인로고*/
+/*h1{text-indent:-9999px; background:url(../img/logo.png) no-repeat left top; width:110px; padding:40px 0; margin:0 auto; margin-top:15px; margin-bottom:15px; position:relative;}
+h1 a{position:absolute; width:100%; top:0; left:0; padding:32px 0; }*/
+
+header{border-bottom:1px solid #eeeeee;}
+header h1{ border-bottom:1px solid #eeeeee; padding:15px 0;}
+header h1 a{display:block; width:104px; padding:32px 0; text-indent:-9999px; margin:0 auto; background:url(../img/logo.png) no-repeat left top;}
+
+/*nav*/
+header nav.menuMain:after{content:''; display:block; clear:both; visibility:hidden;}
+header nav.menuMain{max-width:1240px; width:90%; margin:0 auto; padding-top:20px; /*padding-bottom:15px;*/}
+header nav.menuMain label{float:left;cursor:pointer;}
+header nav.menuMain label span{display:block; width:20px; border-top:2px solid #e58f3a; margin-bottom:5px; transition:all.4s; height:1px;}
+header nav.menuMain label span:nth-of-type(2){border-top-color:#61140c;}
+header nav.menuMain label span:last-of-type{margin-bottom:0;}
+header nav.menuMain ul:after{content:''; /*display:block;*/ clear:both; visibility:hidden;}
+header nav.menuMain ul{width:580px; margin:0 auto;}
+header nav.menuMain ul li{float:left; padding:0 20px; padding-bottom:15px; position:relative;}
+header nav.menuMain ul li:nth-of-type(4){display:none;}
+header nav.menuMain ul li a{font-size:15px; font-weight:400;}
+
+header nav.menuMain ul li:not(:nth-of-type(4)):after{content:'';display:block; position:absolute; width:0; bottom:0; left:50%; height:3px; background-color:#343e57; z-index:10; transition:0.2s;}
+header nav.menuMain ul li:not(:nth-of-type(4)):hover:after{width:100%; left:0; left:0;}
+header nav.menuMain ul li:not(:nth-of-type(4)):hover:after{}
+/*header nav.menuMain ul li:not(:nth-of-type(4)):before{content:'';display:block; position:absolute; width:50%; bottom:0; left:0; height:3px; background-color:#343e57; z-index:10; background-color:rebeccapurple;}
+header nav.menuMain ul li:not(:nth-of-type(4)):after{content:'';display:block; position:absolute; width:0; bottom:0; left:50%; height:3px; background-color:#343e57; z-index:10;}
+header nav.menuMain ul li:not(:nth-of-type(4)):hover:before{width:50%; transition:1s;}
+header nav.menuMain ul li:not(:nth-of-type(4)):hover:after{width:50%; transition:1s;}*/
+
+header nav.menuMain > span{float:right; position:relative;}
+header nav.menuMain > span::before{content:''; background:url(../img/reservation.png) no-repeat center center; display:inline-block; background-size:contain; height:25px; position:absolute; top:-5px; left:-30px; width:30px;}
+header nav.menuMain > span a{font-size:15px; font-weight:600;}
+
+/*메뉴 햄버거와 X 표시*/
+/*.test span{width:30px;}
+.test span:first-of-type{transform: translateY(7px) rotate(45deg);}
+.test span:nth-of-type(2){transform: rotate(-45deg);}
+.test span:last-of-type{display:none;}*/
+
+header .menuArea{width:100%; background-color:white; border-top:1px solid #dddddd; text-align:center; padding-top:30px; display:none; position:absolute; top:162px; z-index:1000;}
+header .menuArea ul:after{content:''; display:block; clear:both; visibility:hidden;}
+header .menuArea ul{width:1240px; max-width:100%; margin:0 auto;}
+header .menuArea ul h2{margin-bottom:26px; font-size:18px; font-weight:400;}
+header .menuArea ul > li{float:left; /*width:206px;*/ width:16.6%;}
+header .menuArea ul li ol{}
+header .menuArea ul li ol li{ margin-bottom:20px;}
+header .menuArea ul li ol li a{font-size:14px; color:#555;}
+
+/*menu scroll*/
+@media screen and (min-width:737px){
+header.menuFixed{z-index:1000; position:fixed; width:100%; background-color:white; border-bottom:1px solid #dddddd;}
+header.menuFixed h1{display:none;}
+header.menuFixed nav.menuMain ul{width:620px;}
+header.menuFixed nav.menuMain ul li:nth-of-type(4){display:block; position:relative;}
+header.menuFixed nav.menuMain ul li:nth-of-type(4) h2{text-indent:-9999px;}
+header.menuFixed nav.menuMain ul li:nth-of-type(4) h2 a:after{content:"　"; display:block; position:absolute; background:url(../img/logo02.png) no-repeat center center; top:-15px; left:0; width:40px; padding:12px 0;}
+header.menuFixed .menuArea{position:static;}
+}
+
+/*메뉴 체크박스*/
+header input[type='checkbox']{display:none;}
+header input[type='checkbox']:checked + .menuMain label span{ border-top-color:orangered; height:0;}
+header input[type='checkbox']:checked + .menuMain label span:first-of-type{transform: translateY(7px) rotate(45deg);}
+header input[type='checkbox']:checked + .menuMain label span:nth-of-type(2){opacity:0;}
+header input[type='checkbox']:checked + .menuMain label span:last-of-type{transform:translateY(-7px) rotate(-45deg);}
+header input[type='checkbox']:checked ~ .menuArea{display:block;}
+
+/*footer*/
+footer:after{content:''; display:block; width:100%; height:16px; background:url(../img/mo_ribbon02.jpg) no-repeat center center; background-size:contain; position:absolute; top:-9px;}
+footer{padding-top:110px; border-top:2px solid #dedede; position:relative; text-align:center;}
+footer ul:after{content:''; display:block; visibility:hidden; clear:both;}
+footer > ul:first-of-type{width:440px; margin:0 auto; margin-bottom:35px;}
+footer ul li{float:left;}
+footer > ul:first-of-type li{ text-align:center; padding:0 25px; border-right:1px solid #ccc;}
+footer > ul:first-of-type li a{font-size:15px; color:#555;}
+footer > ul:first-of-type li:last-of-type a{font-weight:400;}
+footer > ul:first-of-type li:last-of-type{border-right:0;}
+footer address{margin-bottom:10px; width:95%; margin:0 auto; line-height:1.5; }
+footer address ul{max-width:865px; width:100%; margin:0 auto; font-style:initial;}
+footer address ul li{margin-right:10px; font-size:15px; color:#888;}
+footer address ul li:last-of-type{margin-right:0;}
+footer > ul:last-of-type{width:500px; margin:0 auto; margin-bottom:20px;}
+footer > ul:last-of-type li{font-size:15px; color:#888; margin-right:10px;}
+footer > ul:last-of-type li:last-of-type{margin-right:10px;}
+footer > p{text-align:center; font-size:15px; color:#888; margin-bottom:35px;}
+
+footer select{padding:10px 30px; -webkit-appearance:none; border:1px solid; margin-bottom:100px; border:1px solid #ddd; font-size:15px; color:#a1a1a1; position:relative;}
+
+@media screen and (max-width:737px){
+header{position:fixed; top:0; width:100%; background-color:white; z-index:1000;}
+header .menuMain label{position:absolute; top:40px; left:3%; z-index:11; transition:1s;}
+header nav.menuMain label span{width:50px; margin-bottom:15px;}
+
+header nav.menuMain{padding:0}
+header nav.menuMain > span{position:absolute; top:45px; right:3%;}
+header nav.menuMain > span a{font-size:30px;}
+header nav.menuMain > span::before{width:40px; height:40px; top:-7px; left:-40px;}
+header nav.menuMain div{width:70%; height:100%; position:fixed; top:0; left:-70%; z-index:-1; overflow:hidden; transition:1s; background-color:white;}
+header nav.menuMain div:after{content:''; position:fixed; top:0; right:0; height:100%; width:100%; background-color:rgba(0,0,0,0.5); opacity:0; display:none; transition:1s; z-index:-100;}
+header nav.menuMain div ul{  width:103%; height:100%;  background-color:white; transition:1s; overflow-y:scroll; scrollbar-3dlight-color:red; z-index:100;}
+header nav.menuMain div ul li{float:none; padding:0px 0; width:100%; background-color:bisque; text-align:center; transition:1s;}
+header nav.menuMain div ul li:hover{border:none;}
+header nav.menuMain div ul li a{font-size:30px; padding:10% 0; display:block;}
+
+
+header input[type='checkbox']:checked + .menuMain label{left:70%; top:0; z-index:10; transition:1s; z-index:11; padding-right:100%; padding-bottom:100%;}
+header input[type='checkbox']:checked + .menuMain label span:first-of-type{transform: translateY(17px) rotate(45deg);}
+header input[type='checkbox']:checked + .menuMain label span:last-of-type{transform:translateY(-17px) rotate(-45deg);}
+header input[type='checkbox']:checked ~ nav.menuMain div{z-index:10; left:0; transition:1s;}
+header input[type='checkbox']:checked ~ nav.menuMain div:after{ opacity:1; transition:1s; z-index:-10;  display:block;}
+header input[type='checkbox']:checked ~ nav.menuMain ul li{transition:1s; left:0;}
+
+header input[type='checkbox']:checked ~ .menuArea{display:none;}
+
+/*footer address ul{margin-bottom:10px;}
+footer address ul li{margin-right:0;}
+footer address ul li:first-of-type,footer address ul li:nth-of-type(4){margin-right:6%; text-align:right;}
+footer address ul li:nth-of-type(2),footer address ul li:last-of-type{text-align:left;}
+footer address ul li:not(:nth-of-type(3)){width:47%;}
+footer address ul li:nth-child(3){width:100%;}*/
+
+footer address ul{line-height:1.5; margin-bottom:10px;}
+footer address ul li{width:100%; text-align:center;}
+}

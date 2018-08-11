@@ -1,0 +1,135 @@
+﻿a{text-decoration:none; }
+/*font*/
+*{font-family:'Nanum Pen Script';}
+
+/*bxslider 초기화*/
+.bx-wrapper{box-shadow:none; border:none; background:none;}
+
+html{height:100%;}
+body {background:url(../images/collection_bg.jpg) no-repeat left top; background-size: cover; text-align:center;}
+body > div{width:80%; margin:0 auto;}
+div h1{font-size:80px; color:white; font-weight:400; padding-top:50px; margin-bottom:20px; }  
+div h1 span{font-weight:bold;}
+
+div p{font-size:40px; color:#fdd75c; margin-bottom:25px;}
+
+/*icon*/
+.fontaArea{font-size:40px; color:white; margin-bottom:25px;}
+.fontaArea:after{content:''; display:block; visibility:hidden; clear:both;}
+.fontaArea div {float:right;}
+.fontaArea div:first-of-type{}
+.fontaArea div:after{display:block; visibility:hidden; clear:both; content:'';}
+.fontaArea div i{cursor:pointer; float:right; margin-right:10px;}
+.fontaArea div:first-of-type i:first-of-type{margin-right:0;}
+.fontaArea div:first-of-type i:last-of-type{color:#fdd75c;}
+.fontaArea div:last-of-type > i{display:none;}
+.fontaArea div:last-of-type > i:first-of-type{display:block;}
+.fontaArea div i:hover{color:#fdd75c;}
+
+div .bx-wrapper{margin:0 auto;}
+.bx-wrapper .bx-controls-direction a{background:none;}
+.bx-wrapper .bx-controls-direction a:after{display:block; width:100%; height:100%; position:absolute; z-index:1; left:0; top:0; color:white; font-size:80px; text-indent:0;}
+.bx-wrapper .bx-controls-direction a:hover:after{color:#fdd75c;}
+.bx-wrapper .bx-controls-direction a.bx-prev{left:-100px;}
+.bx-wrapper .bx-controls-direction a.bx-prev:after{content:'<';}
+.bx-wrapper .bx-controls-direction a.bx-next{right:-100px;}
+.bx-wrapper .bx-controls-direction a.bx-next:after{content:'>';}
+
+/*bxslider 부분*/
+.collArea{}
+.collArea li{}
+.collArea li figure{position:relative; overflow:hidden;}
+.collArea li figure div{width:100%; height:auto; overflow:hidden; position:relative;}
+.collArea li figure div span{display:none; position:absolute; top:50%; left:0; width:100%; text-align:center; font-size:60px; color:#fdd75c; font-family:none; z-index:1; cursor:pointer;}
+.collArea li figure div img{transition:1s;}
+.collArea li figure:hover div img{filter:blur(2px); transform: scale(1.2); transition:1s; overflow:hidden; z-index:0;}
+.collArea li figure figcaption{padding:20px 0; background-color:#646464; z-index:1;}
+.collArea li figure figcaption dl{color:white; font-size:30px;}
+.collArea li figure:hover figcaption dl{color:#fdd75c;}
+.collArea li figure figcaption a{position:absolute; display:block; top:0; width:100%; height:100%; z-index:10;}
+.collArea li figure div span:last-of-type{color:red;}
+.collArea li figure:hover div .collSpanHover{display:block;}
+.collArea li.deleteLi figure:hover figcaption dl{color:red;}
+
+/*slider control*/
+#tab1{position:relative;}
+.controlArea{font-size:100px;}
+.controlArea a{color:white; position:absolute; top:50%;}
+.controlArea a:hover{color:#fdd75c;}
+.controlArea a.prev{left:0%;}
+.controlArea a.next{right:0%;}
+
+/*추가페이지 */
+.addArea_bg{background-color:rgba(0,0,0,0.8); position:fixed; width:100%; height:100%; z-index:10; top:0; left:0; display:none;}
+.addArea_bg .addArea{background:white; min-width:700px; width:50%; min-height:500px; height:80%; display:block; z-index:10; overflow:auto; margin:0 auto; margin-top:5%;}
+.addArea_bg .addArea form{}
+.addArea_bg .addArea form fieldset{}
+.addArea_bg .addArea form fieldset legend{font-size:80px; font-weight:900; margin-bottom:10px;}
+.addArea_bg .addArea form fieldset ul{}
+.addArea_bg .addArea form fieldset ul li{margin-bottom:10px; position:relative;}
+.addArea_bg .addArea form fieldset ul li label{font-size:30px;}
+.addArea_bg .addArea form fieldset ul li:nth-of-type(3) label{font-size:20px;}
+.addArea_bg .addArea form fieldset ul li input{width:40%; height:25px;}
+.addArea_bg .addArea form fieldset ul li img{width:50%; margin:0 auto;}
+
+/*list 부분*/
+#tab2 { width: 100%; }
+#tab2 figure{width:100%; max-width:1100px; background-color:rgba(0,0,0,0.5); margin:0 auto; }
+#tab2 figure:after{content:''; display:block; visibility:hidden; clear:both;}
+#tab2 figure > div{float:left; height:405px; overflow:hidden;}
+#tab2 figure div img{float:left; width:400px; padding:25px; min-height:380px;}
+#tab2 figure figcaption{float:left; width:calc(100% - 450px); height:440px; overflow:auto;}
+#tab2 figure figcaption ul{}
+#tab2 figure figcaption ul li{font-size:30px; border-bottom:0.2px solid white; padding:20px 0; position:relative; color:white;}
+#tab2 figure figcaption ul li:hover{border-bottom-color:#fdd75c; background-color:rgba(253,215,92,0.3);}
+#tab2 figure figcaption ul li a{ position:absolute; left:0; top:0; width:100%; height:100%;}
+#tab2 figure figcaption ul li.deleteLi:hover{border-bottom-color:red; background-color:rgba(255,0,0,0.3);}
+
+/*popup*/
+.popup01{position:fixed; width:410px; height:40px; top:10px; left:10px; background-color:white;}
+.popup01 p{font-size:20px; padding:10px 0;}
+.popup01 p i{color:#fdd75c;}
+.popup01 ul{position:absolute; width:100%; bottom:-30px;}
+.popup01 ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.popup01 ul li:first-of-type{float:left;}
+.popup01 ul li:last-of-type{float:right;}
+.popup01 ul li input[type='button']{background:none; border:none; font-size:20px; color:white; cursor:pointer;}
+.popup01 ul li input[type='button']:hover{color:#fdd75c;}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{background-color:#fdd75c;}
+#tab2 .mCSB_dragger_bar{background-color:#fdd75c;}
+.bx-wrapper .bx-controls-direction a{top:40%; z-index:1;}
+
+@media only screen and (min-width:1000px) {
+.collArea li figure div{height:305px;}
+.bx-wrapper img{min-height:100%; width:100%;}
+}
+
+@media only screen and (max-width:1000px) {
+#tab1{width:80%; margin:0 auto;}
+
+#tab2 figure > div{height:265px;}
+#tab2 figure div img{width:250px; min-height:initial;}
+#tab2 figure figcaption{width:calc(100% - 300px); height:288px;}
+
+}
+
+/*mobile*/
+/*@media only screen and (max-width:700px) {
+div p{font-size:50px;}
+.fontaArea div i{font-size:80px;}
+
+}*/
+
+@media only screen and (max-width:750px) {
+div p{font-size:25px;}
+.collArea li figure figcaption dl{font-size:20px;}
+}
+
+@media only screen and (max-width:600px) {
+.bx-wrapper .bx-controls-direction a.bx-prev{left:-70px;}
+.bx-wrapper .bx-controls-direction a.bx-next{right:-70px;}
+
+}
+
+

@@ -1,0 +1,230 @@
+﻿.abouArea{animation-duration:3s;
+        animation-timing-function:linear;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:forwards;
+        opacity:0;
+        margin-bottom:90px;
+}
+.abouArea h2{font-size:36px; margin:0 auto; width:200px; text-align:center; border-bottom:5px solid #c5bdb3;   padding-bottom:10px; margin-bottom:35px;}
+.abouArea > dl{width:210px; text-align:center; margin:0 auto;}
+.abouArea > dl dt{font-size:65px; margin-bottom:35px;}
+.abouArea > dl dd{font-size:24px; color:#7a7a7a; border:2px solid #ded9d3; box-sizing:border-box; margin-bottom:35px;}
+.abouArea input[type='checkbox']{display:none;}
+.abouArea label{display:none;}
+
+.abouArea:after{content:''; display:block; visibility:hidden; clear:both;}
+.abouArea > ul{width:100%; margin:0 auto;}
+.abouArea ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.abouArea > ul > li{float:left; width:50%;}
+.abouArea ul li ol li figure:after{content:''; display:block; visibility:hidden; clear:both;}
+.abouArea ul li ol li figure {margin-bottom:25px; margin-left:10%;}
+.abouArea ul li ol li figure > *{float:left;}
+.abouArea ul li ol li figure figcaption{width:70%; margin:25px 0 25px 5%;}
+.abouArea ul li ol li figure figcaption dl:after{content:''; display:block; visibility:hidden; clear:both;}
+.abouArea ul li ol li figure figcaption dl > *{float:left; font-size:24px;}
+.abouArea ul li ol li figure figcaption dl dt{color:#ded9d3;}
+.abouArea ul li ol li figure figcaption dl dd{margin-left:5%;}
+.abouArea > ul > li:first-of-type{box-sizing:border-box; border-right:3px solid #e2ddd8; }
+.abouArea ul li:last-of-type ol li figure figcaption {margin-left:0;}
+.abouArea ul li:last-of-type ol li figure figcaption dl dt{margin-bottom:50px;}
+.abouArea ul li:last-of-type ol li figure figcaption dl dd{margin-left:0; width:100%;}
+.abouArea ul li:last-of-type ol li figure figcaption dl dd ul li{margin-bottom:50px;}
+.abouArea ul li:last-of-type ol li figure figcaption dl dd ul li:last-of-type{margin-bottom:0;}
+.abouArea ul li:last-of-type ol li figure figcaption dl dd ul li img{vertical-align:middle; margin-right:5%;}
+.abouArea > .fa{overflow:hidden; float:left; margin-left:10%; cursor:pointer;}
+.abouArea > .fa:hover{color:#c5bdb3;}
+.abouArea div{width:70%; height:59px; overflow:hidden; position:relative; }
+.abouArea div p:first-child{ 
+    animation-name:movep;
+     animation-duration:10s;
+     animation-timing-function:linear;
+     animation-iteration-count:infinite;
+     animation-direction:normal;
+     font-size:32px;
+     position:absolute;
+     top:25px;
+     left:-630px;
+}
+.abouArea div p:last-child{ 
+    animation-name:movep;
+     animation-duration:10s;
+     animation-timing-function:linear;
+     animation-delay: 5s;
+     animation-iteration-count:infinite;
+     animation-direction:normal;
+     font-size:32px;
+     position:absolute;
+     top:25px;
+     left:-630px;
+}
+/*.abouArea fin*/
+
+.skillArea{background-color:#e2ddd8; height:0; transition:1s; overflow:hidden;
+     animation-duration:3s;
+     animation-timing-function:linear;
+     animation-iteration-count:1;
+     animation-direction:normal;
+     animation-fill-mode:forwards;
+}
+.skillArea h2{font-size:36px; margin:0 auto; width:150px; text-align:center; border-bottom:5px solid #000000;   padding-bottom:10px; margin-bottom:35px; padding-top:55px;}
+.skillArea ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.skillArea ul{width:1200px; margin:0 auto;}
+.skillArea ul li{float:left; margin-right:133px; width:200px; min-width:200px; text-align:center; font-size:30px; margin-bottom:30px;}
+.skillArea ul li:last-of-type{margin-right:0;}
+.skillArea ul li > * {margin-top:50px;}
+/*.skillArea fin*/
+
+.portArea{margin-bottom:650px;}
+.portArea h2{font-size:36px; margin:0 auto; width:200px; text-align:center; border-bottom:5px solid #c5bdb3;   padding-bottom:10px; margin-bottom:35px;}
+.portArea > ul > li{padding-bottom:50px;}
+.portArea ul li:last-of-type{}
+.portArea ul li figure:after{content:''; display:block; visibility:hidden; clear:both;}
+.portArea ul li figure{position:relative;}
+.portArea ul li figure img{float:left; padding:0 5%; width:55%; max-width:835px; border-right:3px solid #c5bdb3; box-sizing:border-box;}
+.portArea ul li:nth-of-type(2n) figure img{float:right; border-left:3px solid #c5bdb3; border-right:none;}
+.portArea ul li figure figcaption{text-align:center; float:left; width:45%;}
+.portArea ul li figure figcaption dl{font-size:24px;}
+.portArea ul li figure figcaption dl dt{margin-bottom:1vw;}
+.portArea ul li figure figcaption dl dd{margin-bottom:1vw;}
+.portArea ul li figure figcaption a{display:inline-block; color:#c5bdb3; border:2px solid #c5bdb3; padding:5px; position:relative;  font-size:24px;}
+.portArea ul li figure figcaption a:hover{color:white; z-index:1;}
+.portArea ul li figure figcaption a:after{content:''; height:0; left:50%; top:50%; width:0; position:absolute; transition:all 0.3s; background-color:#c5bdb3; z-index:-1;}
+.portArea ul li figure figcaption a:hover:after{height:100%; left:0; top:0; width:100%; }
+.portArea ul li figure figcaption ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.portArea ul li figure figcaption ul{margin-bottom:1vw;}
+.portArea ul li figure figcaption ul li{font-size:20px;}
+.portArea ul li figure figcaption ul:first-of-type{width:100%; height:0; padding-top:30vw; position:relative;}
+.portArea ul li figure figcaption ul:first-of-type li{float:left; width:20%; height:0; background-color:red; transition:1s; position:absolute; bottom:0; left:2.5%;}
+.portArea ul li figure figcaption ul:first-of-type li:nth-of-type(2){left:27.5%; background-color:blue;}
+.portArea ul li figure figcaption ul:first-of-type li:nth-of-type(3){left:52.5%; background-color:yellow;}
+.portArea ul li figure figcaption ul:first-of-type li:last-of-type{left:77.5%; background-color:chartreuse;}
+/*첫번쨰 포폴*/
+.portArea ul li:first-of-type figure:hover figcaption ul:first-of-type li{transition:1s;}
+.portArea ul li:first-of-type figure:hover figcaption ul:first-of-type li:first-of-type{height:80%;}
+.portArea ul li:first-of-type figure:hover figcaption ul:first-of-type li:nth-of-type(2){height:90%;}
+.portArea ul li:first-of-type figure:hover figcaption ul:first-of-type li:nth-of-type(3){height:50%;}
+.portArea ul li:first-of-type figure:hover figcaption ul:first-of-type li:last-of-type{height:70%;}
+/*두번째 포폴*/
+.portArea ul li:nth-of-type(2) figure:hover figcaption ul:first-of-type li:first-of-type{height:90%;}
+.portArea ul li:nth-of-type(2) figure:hover figcaption ul:first-of-type li:nth-of-type(2){height:75%;}
+.portArea ul li:nth-of-type(2) figure:hover figcaption ul:first-of-type li:nth-of-type(3){height:50%;}
+.portArea ul li:nth-of-type(2) figure:hover figcaption ul:first-of-type li:last-of-type{height:80%;}
+/*세번째 포폴*/
+.portArea ul li:last-of-type figure:hover figcaption ul:first-of-type li:first-of-type{}
+.portArea ul li:last-of-type figure:hover figcaption ul:first-of-type li:nth-of-type(2){}
+.portArea ul li:last-of-type figure:hover figcaption ul:first-of-type li:nth-of-type(3){}
+.portArea ul li:last-of-type figure:hover figcaption ul:first-of-type li:last-of-type{}
+.portArea ul li figure figcaption ul:last-of-type{width:100%;}
+.portArea ul li figure figcaption ul:last-of-type li{float:left; width:25%;}
+/*.portArea fin*/
+
+.submArea{background-color:#e2ddd8; position:fixed; margin-bottom:75px; bottom:0; width:100%; z-index:-1;}
+.submArea h2{font-size:36px; margin:0 auto; width:150px; text-align:center; border-bottom:5px solid #c5bdb3;   padding-bottom:10px; margin-bottom:35px; padding-top:55px;}
+.submArea:after{content:''; visibility:hidden; display:block; clear:both;}
+.submArea ul{float:left; width:40%; padding:0 5%;}
+.submArea ul li{font-size:32px;}
+.submArea ul li dl{padding:48px 0 48px 48px;}
+.submArea ul li dl dt{display:inline-block;}
+.submArea ul li a{padding:64px 80px; border:2px solid; background-color:white; color:black;}
+.submArea ul li a:hover{background-color:#e2ddd8;}
+.submArea ul li a img{vertical-align:middle; width:60px; margin-right:63px;}
+.submArea ul:last-child li{padding:80px;}
+/*submArea fin*/
+
+
+@keyframes about{
+    from{opacity:0}
+    to{opacity:1;}
+}
+
+@keyframes movep{
+ from{left:-630px;}
+ to {left:1500px;}
+}
+
+@keyframes skillArea{
+    from{height:0;}
+    to{height:500px; margin-bottom:90px;}
+}
+
+@keyframes moveLi{
+    from{right:-100%;}
+    to{right:0;}
+}
+
+
+@media only screen and (max-width:1200px){
+ .abouArea ul li ol li figure figcaption dl > *{font-size:18px;}
+ .abouArea div p{font-size:24px;}
+ 
+ .skillArea ul{width:1000px;}
+ .skillArea ul li{margin-right:66px;}
+
+ .portArea ul li figure figcaption dl{font-size:18px;}
+ .portArea ul li figure figcaption ul li{font-size:16px;}
+
+ .submArea ul li{font-size:24px;}
+ .submArea ul:last-child li{padding:50px; margin-bottom:30px; padding-left:0;}
+ .submArea ul li dl{padding:24px 0 48px 48px;}
+}
+@media only screen and (max-width:1000px) {
+ .skillArea ul{width:800px;}
+ .skillArea ul li{margin-right:0;}
+}
+
+@media only screen and (max-width:800px) {
+.abouArea:after{content:''; display:block; visibility:hidden; clear:both;}
+.abouArea label{display:unset; float:left; width:40%; margin:0 5%; text-align:center; border:1px solid #c5bdb3; padding:50px 0; box-sizing:border-box; margin-bottom:25px; cursor:pointer;}
+.abouArea label:first-of-type{background-color:#c5bdb3;}
+.abouArea input[type='checkbox'] ~ ul > li:last-of-type{display:none;}
+.abouArea input[type='checkbox']:checked ~ ul > li:first-of-type{display:none;}
+.abouArea input[type='checkbox']:checked ~ ul > li:last-of-type{display:unset;}
+.abouArea input[type='checkbox']:checked ~ label:first-of-type{background-color:white;}
+.abouArea input[type='checkbox']:checked ~ label:last-of-type{background-color:#c5bdb3;}
+.abouArea > ul > li:first-of-type{border:unset;}
+.abouArea > ul > li{width:100%;}
+.abouArea ul li ol li figure{margin-left:20%;}
+
+.skillArea ul{width:500px; }
+.skillArea ul li:nth-child(2n+1){margin-right:100px;}
+
+.portArea ul li figure img{width:100%; border:none; opacity:0.7;} 
+.portArea ul li figure figcaption{position:absolute; width:100%; margin:0 auto;}
+.portArea ul li figure figcaption ul:first-of-type{width:90%; margin:0 auto; padding-top:60vw;}
+.portArea ul li figure figcaption a{position:absolute; top:0; left:0; width:100%; height:80vw; text-indent:-9999px; border:none;}
+.portArea ul li figure figcaption a:after{background-color:unset;}
+.portArea ul li figure figcaption ul:last-of-type{width:90%; margin:0 auto;}
+
+/*첫번쨰 포폴*/
+.portArea ul li:first-of-type figure figcaption ul:first-of-type li:first-of-type{height:80%; }
+.portArea ul li:first-of-type figure figcaption ul:first-of-type li:nth-of-type(2){height:90%; }
+.portArea ul li:first-of-type figure figcaption ul:first-of-type li:nth-of-type(3){height:50%;}
+.portArea ul li:first-of-type figure figcaption ul:first-of-type li:last-of-type{height:70%;}
+/*두번째 포폴*/
+.portArea ul li:nth-of-type(2) figure figcaption ul:first-of-type li:first-of-type{height:90%; }
+.portArea ul li:nth-of-type(2) figure figcaption ul:first-of-type li:nth-of-type(2){height:75%; }
+.portArea ul li:nth-of-type(2) figure figcaption ul:first-of-type li:nth-of-type(3){height:50%;}
+.portArea ul li:nth-of-type(2) figure figcaption ul:first-of-type li:last-of-type{height:80%; }
+/*세번째 포폴*/
+.portArea ul li:last-of-type figure figcaption ul:first-of-type li:first-of-type{}
+.portArea ul li:last-of-type figure figcaption ul:first-of-type li:nth-of-type(2){}
+.portArea ul li:last-of-type figure figcaption ul:first-of-type li:nth-of-type(3){}
+.portArea ul li:last-of-type figure figcaption ul:first-of-type li:last-of-type{}
+
+
+.submArea ul{width:90%; margin:0 auto;}
+.submArea ul:after{content:''; display:block; visibility:hidden; clear:both;}
+.submArea ul:last-of-type li{float:left; width:45%; height:150px; padding:0; position:relative; background-color:white; margin-right:10%;}
+.submArea ul:last-of-type li:last-of-type{margin-right:0;}
+.submArea ul:last-of-type li a{position:absolute; left:0; top:0; padding:45px 0; padding-left:10%; width:90%; border:none;}
+.submArea ul li a img{margin-right:0;}
+
+@keyframes skillArea{
+    from{height:0;}
+    to{height:800px; margin-bottom:90px;}
+}
+}
+
+
+

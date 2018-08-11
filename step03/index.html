@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chopper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/faviconChopper.ico" type="image/x-icon" />
+
+    <!--jquery lode-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!--fancyBox-->
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+
+    <!-- favicon Error -->
+    <link rel="shortcut icon" href="#" />
+
+    <!--bxslider-->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+    <!--css-->
+    <link href="css/import.css" rel="stylesheet" />
+    <script>
+        var refreshNumber = 0;
+        if (refreshNumber = 0) {
+        location.href = location.href;
+        refreshNumber = 2;
+        }
+        /*menu scroll*/
+        $(document).ready(function () {
+            $("header nav ul li a").removeClass("open");
+            var hashTagActive = "";
+            $(".scroll").click(function (event) {
+                if (hashTagActive != this.hash) {
+                    event.preventDefault();
+                    var dest = 0;
+                    if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                        dest = $(document).height() - $(window).height();
+                    } else {
+                        dest = $(this.hash).offset().top;
+                    }
+                    $('html,body').animate({
+                        scrollTop: dest
+                    }, 500, 'swing');
+                    hashTagActive = this.hash;
+                }
+            });
+
+            /*chaAreaBxslider*/
+            $('.chaAreaBxslider').bxSlider({
+                pagerCustom: '.thumbPager',
+                nextSelector: '.next',
+                prevSelector: '.prev',
+                nextText: '>',
+                prevText: '<',
+            });
+            var chaAreaNumber = 1;
+            var chaAreaNumber = 1;
+            $('.chaArea .thumbPager li:first-child a').click(function () {
+                chaAreaNumber = 1;
+                $('.chaArea .thumbPager li a p').css('display', 'none');
+                $('.chaArea .thumbPager li:first-child a p').css('display', 'block');
+            });
+            $('.chaArea .thumbPager li:nth-child(2) a').click(function () {
+                chaAreaNumber = 2;
+                $('.chaArea .thumbPager li a p').css('display', 'none');
+                $('.chaArea .thumbPager li:nth-child(2) a p').css('display', 'block');
+            });
+            $('.chaArea .thumbPager li:nth-child(3) a').click(function () {
+                chaAreaNumber = 3;
+                $('.chaArea .thumbPager li a p').css('display', 'none');
+                $('.chaArea .thumbPager li:nth-child(3) a p').css('display', 'block');
+            });
+            $('.chaArea .thumbPager li:nth-child(4) a').click(function () {
+                chaAreaNumber = 4;
+                $('.chaArea .thumbPager li a p').css('display', 'none');
+                $('.chaArea .thumbPager li:nth-child(4) a p').css('display', 'block');
+            });
+            $('.chaArea .thumbPager li:last-child a').click(function () {
+                number = 5;
+                $('.chaArea .thumbPager li a p').css('display', 'none');
+                $('.chaArea .thumbPager li:last-child a p').css('display', 'block');
+            });
+            $('.prev').click(function () {
+                chaAreaNumber--;
+                if (chaAreaNumber == 0) {
+                    chaAreaNumber = 5;
+                };
+                if (chaAreaNumber == 1) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:first-child a p').css('display', 'block');
+                } else if (chaAreaNumber == 2) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:nth-child(2) a p').css('display', 'block');
+                } else if (chaAreaNumber == 3) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:nth-child(3) a p').css('display', 'block');
+                } else if (chaAreaNumber == 4) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:nth-child(4) a p').css('display', 'block');
+                } else {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:last-child a p').css('display', 'block');
+                };
+            });
+            $('.next').click(function () {
+                chaAreaNumber++;
+                if (chaAreaNumber == 6) {
+                    chaAreaNumber = 1;
+                };
+                if (chaAreaNumber == 1) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:first-child a p').css('display', 'block');
+                } else if (chaAreaNumber == 2) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:nth-child(2) a p').css('display', 'block');
+                } else if (chaAreaNumber == 3) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:nth-child(3) a p').css('display', 'block');
+                } else if (chaAreaNumber == 4) {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:nth-child(4) a p').css('display', 'block');
+                } else {
+                    $('.chaArea .thumbPager li a p').css('display', 'none');
+                    $('.chaArea .thumbPager li:last-child a p').css('display', 'block');
+                };
+            });
+
+
+            /*skiAreaThemBxslider*/
+            $('.skiAreaThum').bxSlider({
+                pager: false,
+                slideWidth: 200,
+                minSlides: 3,
+                maxSlides: 3,
+                moveSlides: 1,
+                nextSelector: '.skiAreaNext',
+                prevSelector: '.skiAreaPrev',
+                nextText: '>',
+                prevText: '<',
+            });
+
+            /*skiAreaBxslider*/
+            $('.skiAreaBxslider').bxSlider({
+                controls: true,
+                pagerCustom: '.skiAreaThum',
+                nextSelector: '.skiAreaNext',
+                prevSelector: '.skiAreaPrev',
+                nextText: '>',
+                prevText: '<',
+            });
+
+            /*epiAreaFancybox*/
+            $('.module').fancybox();
+
+            $('.colArea ul li:nth-child(2)').mouseover(function () {
+                document.getElementById("ussop").src = "images/Ussop_icon_hover_03.png";
+            });
+            $('.colArea ul li:nth-child(2)').mouseout(function () {
+                document.getElementById("ussop").src = "images/Ussop_icon.png";
+            });
+            $('.colArea ul li:nth-child(3)').mouseover(function () {
+                document.getElementById("sanji").src = "images/Sanji_con_hover_03.png";
+            });
+            $('.colArea ul li:nth-child(3)').mouseout(function () {
+                document.getElementById("sanji").src = "images/Sanji_con.png";
+            });
+            $('.colArea ul li:nth-child(4)').mouseover(function () {
+                document.getElementById("brook").src = "images/Brook_icon_hover_03.png";
+            });
+            $('.colArea ul li:nth-child(4)').mouseout(function () {
+                document.getElementById("brook").src = "images/Brook_icon.png";
+            });
+            $('.colArea ul li:nth-child(5)').mouseover(function () {
+                document.getElementById("zoro").src = "images/Zoro_icon_hover_03.png";
+            });
+            $('.colArea ul li:nth-child(5)').mouseout(function () {
+                document.getElementById("zoro").src = "images/Zoro_icon.png";
+            });
+            $('.colArea ul li:nth-child(6)').mouseover(function () {
+                document.getElementById("nami").src = "images/Nami_icon_hover_03.png";
+            });
+            $('.colArea ul li:nth-child(6)').mouseout(function () {
+                document.getElementById("nami").src = "images/Nami_icon.png";
+            });
+            $('.colArea ul li:nth-child(7)').mouseover(function () {
+                document.getElementById("nico").src = "images/Nico_icon_hover_03.png";
+            });
+            $('.colArea ul li:nth-child(7)').mouseout(function () {
+                document.getElementById("nico").src = "images/Nico_icon.png";
+            });
+            $('.colArea ul li:nth-child(8)').mouseover(function () {
+                document.getElementById("franck").src = "images/Franck_icon_hover.png";
+            });
+            $('.colArea ul li:nth-child(8)').mouseout(function () {
+                document.getElementById("franck").src = "images/Franck_icon.png";
+            });
+            $('.colArea ul li:last-child').mouseover(function () {
+                document.getElementById("luffy").src = "images/Luffys_icon_hover_03.png";
+            });
+            $('.colArea ul li:last-child').mouseout(function () {
+                document.getElementById("luffy").src = "images/Luffys_icon.png";
+            });
+        });
+
+        $(window).scroll(function () {
+            scrollPercent = ($(window).scrollTop() / ($(document).height() - $(window).height())) * 100;
+            if (matchMedia("screen and (min-width: 767px)").matches) {
+
+                if (scrollPercent >= 15) {
+                    $('header nav').addClass('navmenu');
+                    $('header label').addClass('menu');
+                } else if (scrollPercent <= 15) {
+                    $('header nav').removeClass('navmenu');
+                    $('header label').removeClass('menu');
+                    if (document.getElementById("menu").checked == true) {
+                        $('header input[type=checkbox]:checked+label').addClass('menuLabel');
+                    } else if (document.getElementById("menu").checked == false) {
+                        $('header input[type=checkbox]+label').removeClass('menuLabel');
+                    }
+                }
+            };
+        });
+    </script>
+</head>
+<body>
+    <div class="warp" id="home">
+        <header>
+            <h1>
+            <span></span>
+                Tony Tony Chopper
+            </h1>
+                <input type="checkbox" id="menu" />
+                <label for="menu">Menu</label>
+                <nav>
+                    <ul>
+                        <!--a-->
+                        <li><a href="#home" class="scroll">Home</a></li>
+                        <li><a href="#Profile" class="scroll">Profile</a></li>
+                        <li><a href="#Character" class="scroll">Character</a></li>
+                        <li><a href="#Skill" class="scroll">Skill</a></li>
+                        <li><a href="#Episode" class="scroll">Episode</a></li>
+                        <li><a href="#Colleagues" class="scroll">Colleagues</a></li>
+                    </ul>
+                </nav>
+        </header> 
+
+        <section class="proArea" id="Profile">
+            <div>
+                <iframe src="https://www.youtube.com/embed/ccYcG1Thrdg"></iframe>
+            </div>
+            <h2>Profile</h2>
+        </section>
+
+        <section class="chaArea" id="Character">
+            <h2>Character</h2>
+            <ul class="thumbPager">
+                <li>
+                        <a href="#" data-slide-index="0" >
+                            <img src="images/chopper_th.jpg" alt="chopper_th"  />
+                        <p>CHOPPER</p>
+                        </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="1" >
+                        <img src="images/hiluluk_th.png" alt="hiluluk_th"/>
+                        <p>HILULUK</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="2" >
+                        <img src="images/kureha_th.png" alt="kureha_th"/>
+                        <p>KUREHA</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="3" >
+                        <img src="images/wapol_th.png" alt="wapol_th"/>
+                        <p>WAPOL</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="4" >
+                        <img src="images/Dalton_th.png" alt="dalton_th"/>
+                        <p>DALTON</p>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" class="prev"></a>
+            <a href="#" class="next"></a>
+
+            <ul class="chaAreaBxslider">
+                <li>
+                    <figure>
+                        <img src="images/chopper.png" />
+                        <figcaption>
+                            <p>
+                                악마의 열매(사람사람 열매)를 먹은
+                                파란코의순록! <br />
+                                파란코와 악마의 열매로 인해
+                                부모에게까지 버림 받고
+                                더이상 순록도 인간도 아닌 외톨이 순록
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/hiluluk.png"  />
+                        <figcaption>
+                            <p>
+                                외톨이 쵸파에게 아버지이자 친구가 되어준 첫번째 인물, 쵸파라는 이름이 지어주었으며<br />
+                                쵸파에게 의사로서의 마음가짐을 가르쳐주는 등, 여러모로 쵸파에게 있어 아버지와 같은 사람
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/kureha_1.png"  />
+                        <figcaption>
+                            <p>
+                                올해 창창한 130대인 노인, 토니토니 쵸파의 스승이며 동시에 쵸파가 처음으로 치료한 환자
+                                히루루크가 죽고 쵸파에게 의술을 가르친다 <br />
+                                "내 앞에서 환자가 사라질떄는 말이야.. 낫거나 죽거나!"
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/wapol_2.png"  />
+                        <figcaption>
+                            <p>
+                                과거 드럼섬에 존재했던 드럼 왕국의 마지막 국왕
+                                우걱우걱 열매의 능력자이며 세계정부의 허락을 받아
+                                악의 블랙 드림왕국을 건국도르돈이 사쿠라 왕국의 국왕이 되었다는걸 듣고 비웃으며 "어떻게 그 자리에서 끌어내릴까!"하며 망언을 내뱉었다.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/Dalton_1.png" />
+                        <figcaption>
+                            <p>
+                                과거 드림 왕국의 호위대장 악마의 열매(소소 열매)을 먹은 동물계 능력자이다.
+                                티끌같은 충성심만 남아 도르돈에거 복종하는 상태
+                                이후 드림왕국(벚꽃 왕국)의 통치자가 된다.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skiArea" id="Skill">
+            <h2>skill</h2>
+            <a href="#" class="skiAreaPrev"></a>
+            <a href="#" class="skiAreaNext"></a>
+            <ul class="skiAreaThum" id="bxslider1">
+                <!--thumbPager-->
+                <li>
+                    <a href="#" data-slide-index="0">
+                        <img src="images/armpoint_th.png" alt="armpoint"  />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="1">
+                        <img src="images/guardpoint_th.png" alt="guardpoint" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="2">
+                        <img src="images/brainPoint_th.png" alt="brainpint" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="3">
+                        <img src="images/heavypoint_th.png" alt="heavypoint" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="4">
+                        <img src="images/jumpingpoint_th.png" alt="jumpingpoint" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-slide-index="5">
+                        <img src="images/walkpoint_th.png" alt="walkpoint" />
+                    </a>
+                </li>
+            </ul>
+            <!--bxslider ul li-->
+            <ul class="skiAreaBxslider" id="bxslider2">
+                <li>
+                    <figure>
+                        <figcaption>
+                            <p>
+                                동물형에 해당하는 형태.<br />
+                                상반신이 근육질이 되어서
+                                중량감있는 공격이 가능하다.
+                            </p>
+                        </figcaption>
+                        <img src="images/arm_point.png" alt="armpoint" />
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>
+                            <p>
+                                인수형에 해당하는 형태.<br />
+                                전신의 모피를 부풀려
+                                데미지를 완화시킨다.
+                            </p>
+                        </figcaption>
+                        <img src="images/guardpoint_1.png" alt="guardpoint" />
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>
+                        <p>
+                            인수형에 해당하는 형태.<br />
+                            두뇌 회전을 강화시켜
+                            상대의 약점을 분석한다.
+                        </p>
+                        </figcaption>
+                        <img src="images/brainPoint.png" alt="brainpoint" />
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>
+                            <p>
+                                동물형에 해당하는 형태. <br />
+                                몸의 무게와 완력을 강화시켜
+                                파워를 올리게 된다. 
+                            </p>
+                        </figcaption>
+                        <img src="images/heavypoint.png" alt="heavypoint" />
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>
+                            <p>
+                                동물형에 해당하는 형태.<br />
+                                하반신을 날씬하 다리 무게를 줄여
+                                점프력을 강화시키는 기술
+                            </p>
+                        </figcaption>
+                        <img src="images/jumpingpoint_2.png" alt="jumpingpoint" />
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <figcaption>
+                            <p>
+                                인간형에 해당하는형태.<br />
+                                다리 근력을 강화시켜
+                                빠르게 달릴수 있다.
+                            </p>
+                        </figcaption>
+                        <img src="images/walkpoint.png" alt="walkpoint" />
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="epiArea" id="Episode">
+            <h2>Episode</h2>
+            <ul>
+                <li>
+                    <figure>
+                        <a class="module" href="images/chopperMan.png">
+                            <img src="images/chopperMan.png" alt="chopperman" />
+                        </a>
+                        <figcaption>&lt;밀짚모자 극장판&gt;<br /> 쵸파맨</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a class="module" href="images/33.png">
+                            <img src="images/33.png" alt="3" />
+                        </a>
+                        <figcaption>&lt;극장판 3기&gt;<br /> 진기한 동물섬의 쵸파왕국</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a class="module" href="images/9.png">
+                            <img src="images/9.png" alt="9" />
+                        </a>
+                        <figcaption>&lt;극장판 9기&gt;<br /> 에피소드 오브 쵸파 </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="colArea" id="Colleagues">
+            <h2>Colleagues</h2>
+            <ul>
+                <li><img src="images/tooth02.png" alt="chopperTooth" /></li>
+                <li class="ussop"><a href="#">
+                    <img src="images/Ussop_icon.png" alt="" id="ussop" />
+                        <p>Ussop</p>                    
+                    </a>
+                </li>
+                <li><a href="#">
+                    <img src="images/Sanji_con.png" alt="" id="sanji"/>
+                    <p>Sanji</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <img src="images/Brook_icon.png" alt="" id="brook"/>
+                    <p>Brook</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <img src="images/Zoro_icon.png" alt="" id="zoro"/>
+                    <p>Zoro</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <img src="images/Nami_icon.png" alt="" id="nami"/>
+                    <p>Nami</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <img src="images/Nico_icon.png" alt="" id="nico"/>
+                    <p>Nico</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <img src="images/Franck_icon.png" alt="" id="franck"/>
+                    <p>Franck</p>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <img src="images/Luffys02_icon.png" alt="" id="luffy"/>
+                    <p>Luffy</p>
+                    </a>
+                </li>
+            </ul>
+            <footer>ⓒ2018 korean KimSungEun</footer>
+        </section>
+    </div>
+</body>
+</html>
